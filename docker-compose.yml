@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    command: gunicorn -w 4 -b 0.0.0.0:5000 app:app
+    volumes:
+      - .:/code
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=${FLASK_ENV}
+      - DATABASE_URL=${DATABASE_URL}
+
+  frontend:
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - CHOKIDAR_USEPOLLING=true

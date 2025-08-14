@@ -1,0 +1,13 @@
+.main-layout {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--background-color);
+    color: white;
+    padding-left: 120px;
+}
+
+@media (max-width: 768px) {
+    .main-layout {
+        padding: 0 5px;
+    }
+}
