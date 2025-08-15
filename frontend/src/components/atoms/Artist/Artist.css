@@ -1,0 +1,128 @@
+.artist-list-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 2.5rem;
+    column-gap: .5rem;
+    padding-bottom: 100px;
+}
+
+.artist-gallery-container {
+    padding: 0 100px;
+}
+
+.artist-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-artist-container {
+    max-height: 210px;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.avatar-artist-container img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+}
+
+.avatar-artist-container img:hover {
+    transform: scale(1.1);
+}
+
+.artist-name {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+.artist-link {
+    text-transform: uppercase;
+    cursor: default;
+    color: var(--vision-blue);
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.2;
+    letter-spacing: -.03em;
+}
+
+.artist-link.artist {
+    text-transform: initial;
+    cursor: pointer;
+}
+
+.artist-link.artist:hover {
+    opacity: .6;
+}
+
+.total-image-container {
+    margin-bottom: 0.6rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.total-image-container p {
+    margin: 0;
+    margin-left: 8px;
+}
+
+
+.artist-style {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.artist-title-container {
+    display: flex;
+    gap: 1rem;
+    padding: 40px 100px;
+    align-items: center;
+}
+
+.artist-title {
+    font-family: "Space Grotesk", serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+
+
+    .artist-list-container {
+        column-gap: 2rem;
+    }
+
+    .artist-name {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .artist-list-container {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+
+@media (min-width: 768px) {
+    .avatar-artist-container {
+        max-height: 400px;
+    }
+
+    .artist-style {
+        font-weight: 400;
+        font-size: 15px;
+    }
+}

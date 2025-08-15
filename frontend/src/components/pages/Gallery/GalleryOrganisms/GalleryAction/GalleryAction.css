@@ -1,0 +1,39 @@
+.gallery-action-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.gallery-action-container .nav-tabs {
+    border-bottom: none;
+    justify-content: center;
+}
+
+.gallery-action-container .nav-item {
+    margin: 0 10px !important;
+}
+
+
+.gallery-action-container .nav-tabs .nav-link:hover {
+    border: none !important;
+}
+
+.gallery-action-container .nav-tabs .nav-link {
+    font-size: 1.5rem;
+    line-height: 1.55;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--white-color);
+    border: none
+}
+
+.gallery-action-container .nav-tabs .nav-link.active {
+    border: none;
+    background-color: transparent;
+    color: var(--red-color);
+
+}

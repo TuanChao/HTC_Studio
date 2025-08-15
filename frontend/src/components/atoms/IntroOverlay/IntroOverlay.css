@@ -1,0 +1,90 @@
+/* Nền đen bao phủ toàn màn hình */
+.logo-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 9998;
+    animation: fadeUp 2s ease-in-out forwards;
+}
+
+.logo-overlay1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255, 0.6);
+    z-index: 9997;
+    animation: fadeUp1 2s ease-in-out forwards;
+}
+
+.logo-mask {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 9999;
+    animation: fadeOutScale 3.5s ease-in-out forwards;
+}
+
+.white-mask {
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+    background-color: white;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    object-fit: cover;
+}
+
+
+
+@keyframes fadeOutScale {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(10);
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        height: 100%;
+        transform: scale(1);
+    }
+
+    100% {
+        height: 0;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeUp1 {
+    0% {
+        height: 100%;
+    }
+
+    15% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0;
+    }
+}

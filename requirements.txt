@@ -1,0 +1,9 @@
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+flasgger
+boto3
+gunicorn
+python-dotenv
+pymysql
+cryptography

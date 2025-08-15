@@ -1,0 +1,45 @@
+.gallery-template {
+    display: flex;
+    flex-direction: column;
+}
+
+.artist-preview-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.artist-preview-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.artist-preview-name {
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.artist-view-tweet:hover {
+    opacity: .8;
+}
+
+.modal-base-container:has(.modal-preview-container) .modal-header {
+    border: none !important;
+}
+
+.artist-view-tweet {
+    color: rgb(70, 161, 220);
+    text-decoration-color: initial;
+    font-size: 15px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    font-style: normal;
+}
+
+.artist-dot {
+    color: white;
+    margin: 0 10px;
+}

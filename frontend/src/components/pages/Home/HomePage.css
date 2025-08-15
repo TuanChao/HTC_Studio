@@ -1,0 +1,14 @@
+.home-container {
+    width: 100%;
+    font-family: "Space Grotesk", serif;
+}
+
+.home-content-container {
+    padding: 0 20px;
+}
+
+@media (min-width: 1200px) {
+    .home-content-container {
+        padding: 0 50px;
+    }
+}

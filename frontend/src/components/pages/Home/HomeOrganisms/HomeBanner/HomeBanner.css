@@ -1,0 +1,115 @@
+.banner-container {
+    position: relative;
+}
+
+.home-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.banner-modal {
+    position: absolute;
+    z-index: 990;
+    bottom: 30px;
+    left: 30px;
+    color: var(--white-color);
+    font-weight: bold;
+    background-color: transparent;
+    padding: 15px;
+    max-width: 50%;
+}
+
+.content-description {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+.content-left-top {
+    letter-spacing: 1.29px;
+    font-size: 50px;
+    text-transform: uppercase;
+    opacity: .5;
+}
+
+.vertical-text-container {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    text-align: left;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    z-index: 2;
+    color: white;
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 15px;
+}
+
+.vertical-title {
+    font-family: "Space Grotesk", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin: 0;
+    letter-spacing: 1.29px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.vertical-description {
+    font-family: "Space Grotesk", serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0 0;
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--white-color);
+    opacity: .5;
+    text-transform: uppercase;
+}
+
+.fade-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, var(--background-color) 100%);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+
+@media (max-width: 1200px) {
+
+    .content-left-top,
+    .vertical-title {
+        font-size: 25px;
+    }
+
+    .content-description,
+    .vertical-description {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .banner-modal,
+    .vertical-text-container {
+        display: none;
+    }
+
+    .banner-container {
+        padding-top: 100px;
+    }
+}

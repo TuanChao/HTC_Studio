@@ -1,0 +1,106 @@
+.modal-preview-container {
+    text-align: center;
+    position: relative;
+}
+
+.modal-preview-container .carousel-inner {
+    width: 100%;
+    height: 70vh !important;
+}
+
+.image-preview {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+.video-preview {
+    width: auto !important;
+    height: 100%;
+    max-width: 100%;
+}
+
+.modal-preview-container .carousel-item-next,
+.modal-preview-container .carousel-item-prev,
+.modal-preview-container .carousel-item.active {
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-controls.first-item {
+    justify-content: flex-end;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-index {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+@keyframes scale-up {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.carousel-dots {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.dot.active-dot {
+    background-color: white;
+    animation: scale-up 0.3s ease-in-out;
+}
+
+@media (min-width: 1200px) {
+    .modal-xl:has(.modal-preview-container) {
+        --bs-modal-width: 80vw;
+    }
+}
