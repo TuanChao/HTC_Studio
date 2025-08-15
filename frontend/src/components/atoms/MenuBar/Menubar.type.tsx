@@ -7,10 +7,16 @@ export type MenuItem = {
 
 export const MENU_ARRAY: MenuItem[] = [
   { title: "Home Page", url: routesName.ROOT },
+<<<<<<< HEAD
   { title: "Gallery", url: routesName.GALLERY },
   { title: "Order", url: routesName.ORDER },
   { title: "About", url: routesName.ABOUT },
   { title: "RoadMap", url: routesName.ROADMAP },
+=======
+  { title: "Fan Art", url: routesName.GALLERY },
+  { title: "Order", url: routesName.ORDER },
+  { title: "About", url: routesName.ABOUT },
+>>>>>>> origin/master
 ];
 
 export const SOCIAL_HEADER = [
