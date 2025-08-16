@@ -22,18 +22,16 @@
 }
 
 .logo-mask {
-<<<<<<< HEAD
     position: fixed;
     width: 100vw;
     height: 100vh;
-=======
+
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     width: 100%;
     height: 100%;
->>>>>>> origin/master
     background-color: transparent;
     z-index: 9999;
     animation: fadeOutScale 3.5s ease-in-out forwards;
@@ -47,13 +45,11 @@
 }
 
 .logo {
-<<<<<<< HEAD
     width: 100%;
     height: 100%;
-=======
-    max-width: 200px;
-    max-height: 200px;
->>>>>>> origin/master
+
+    /* max-width: 500px;
+    max-height: 500px; */
     opacity: 1;
     object-fit: cover;
 }

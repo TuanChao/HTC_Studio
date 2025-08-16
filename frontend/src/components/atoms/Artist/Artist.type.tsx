@@ -6,6 +6,9 @@ export type DetailArtist = {
   avatar: string;
   x_tag: string;
   total_image: number;
+  disabled?: boolean;
+  created_at?: string;
+  updated_at?: string;
 };
 
 export type DetailMember = {

@@ -1,17 +1,19 @@
 import MainLayout from "src/components/layouts/MainLayout";
+import AdminLayout from "src/components/layouts/AdminLayout";
+import ProtectedRoute from "src/components/layouts/ProtectedRoute";
 import AboutPage from "src/components/pages/About";
 import GalleryPage from "src/components/pages/Gallery";
 import HomePage from "src/components/pages/Home";
 import OrderPage from "src/components/pages/Order";
+import RoadMapPage from "src/components/pages/RoadMap";
+import AdminLogin from "src/components/pages/Admin/AdminLogin";
+import AdminDashboard from "src/components/pages/Admin/AdminDashboard";
+import AdminArtists from "src/components/pages/Admin/AdminArtists";
 import routesName from "./enum.routes";
 import { IRouterData } from "./type.routes";
-<<<<<<< HEAD
-import RoadMap from "src/components/pages/RoadMap";
-import RoadMapPage from "src/components/pages/RoadMap";
-=======
->>>>>>> origin/master
 
 export const routesData: IRouterData[] = [
+  // Public routes
   {
     path: routesName.ROOT,
     layout: MainLayout,
@@ -32,12 +34,54 @@ export const routesData: IRouterData[] = [
     layout: MainLayout,
     component: () => <OrderPage />,
   },
-<<<<<<< HEAD
   {
     path: routesName.ROADMAP,
     layout: MainLayout,
     component: () => <RoadMapPage />,
   },
-=======
->>>>>>> origin/master
+
+  // Admin routes
+  {
+    path: routesName.ADMIN_LOGIN,
+    component: () => <AdminLogin />,
+  },
+  {
+    path: routesName.ADMIN_DASHBOARD,
+    layout: AdminLayout,
+    component: () => (
+      <ProtectedRoute>
+        <AdminDashboard />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: routesName.ADMIN_ARTISTS,
+    layout: AdminLayout,
+    component: () => (
+      <ProtectedRoute>
+        <AdminArtists />
+      </ProtectedRoute>
+    ),
+  },
+  // {
+  //   path: routesName.ADMIN_GALLERIES,
+  //   layout: AdminLayout,
+  //   component: () => <ProtectedRoute>
+  //     <AdminGalleries />
+  //     </ProtectedRoute>,
+  // },
+  // {
+  //   path: routesName.ADMIN_KOLS,
+  //   layout: AdminLayout,
+  //   component: () => <ProtectedRoute>
+  //     <AdminKols />
+  //     </ProtectedRoute>,
+  // },
+  // {
+  //   path: routesName.ADMIN_TEAMS,
+  //   layout: AdminLayout,
+  //   component: () => <ProtectedRoute>
+  //     <AdminTeams />
+  //     </ProtectedRoute>,
+  // },
 ];

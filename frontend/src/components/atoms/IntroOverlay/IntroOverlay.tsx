@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./IntroOverlay.css";
-<<<<<<< HEAD
-import logo from "src/assets/images/Logo_hole_fix.png";
-=======
-import logo from "src/assets/images/HTC_logo_White_1.png";
->>>>>>> origin/master
-
+import logo from "src/assets/images/Logo_hole.png";
+//  
 const IntroOverlay: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
 

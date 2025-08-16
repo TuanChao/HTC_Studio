@@ -3,10 +3,15 @@ const routesName = {
   GALLERY: "/gallery",
   ABOUT: "/about",
   ORDER: "/order",
-<<<<<<< HEAD
   ROADMAP: "/roadmap",
-=======
->>>>>>> origin/master
+
+  // Admin routes
+  ADMIN_LOGIN: "/htcadmin/login",
+  ADMIN_DASHBOARD: "/htcadmin/dashboard",
+  ADMIN_ARTISTS: "/htcadmin/artists",
+  ADMIN_GALLERIES: "/htcadmin/galleries",
+  ADMIN_KOLS: "/htcadmin/kols",
+  ADMIN_TEAMS: "/htcadmin/teams",
 };
 
 export default routesName;

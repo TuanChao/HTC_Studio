@@ -1,0 +1,88 @@
+.admin-artists {
+  padding: 0;
+}
+
+.admin-artists-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.admin-artists-header h2 {
+  margin: 0 !important;
+}
+
+.admin-artists-table {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-artists-table .ant-table-thead > tr > th {
+  background-color: #fafafa;
+  font-weight: 600;
+}
+
+.admin-artists-table .ant-table-tbody > tr:hover > td {
+  background-color: #f5f5f5;
+}
+
+.avatar-placeholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bfbfbf;
+  font-size: 18px;
+}
+
+/* Modal form styling */
+.ant-modal .ant-form-item {
+  margin-bottom: 20px;
+}
+
+.ant-modal .ant-upload-list-picture-card .ant-upload-list-item {
+  width: 100px;
+  height: 100px;
+}
+
+.ant-modal .ant-upload-select-picture-card {
+  width: 100px;
+  height: 100px;
+}
+
+/* Action buttons */
+.admin-artists-table .ant-btn-link {
+  padding: 4px 8px;
+  height: auto;
+}
+
+.admin-artists-table .ant-btn-link:hover {
+  background-color: rgba(24, 144, 255, 0.1);
+  border-radius: 4px;
+}
+
+.admin-artists-table .ant-btn-dangerous:hover {
+  background-color: rgba(255, 77, 79, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-artists-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .admin-artists-table .ant-table {
+    font-size: 14px;
+  }
+  
+  .admin-artists-table .ant-table-tbody > tr > td {
+    padding: 8px;
+  }
+}
