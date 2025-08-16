@@ -2,7 +2,6 @@ using AutoMapper;
 using HTC.Backend.DTOs;
 using HTC.Backend.Models;
 using HTC.Backend.Repositories;
-using HTC.Backend.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HTC.Backend.Controllers;
@@ -13,21 +12,22 @@ public class KolsController : ControllerBase
 {
     private readonly IKolRepository _kolRepository;
     private readonly IMapper _mapper;
-    private readonly IS3Service _s3Service;
 
     public KolsController(
         IKolRepository kolRepository,
-        IMapper mapper,
-        IS3Service s3Service)
+        IMapper mapper)
     {
         _kolRepository = kolRepository;
         _mapper = mapper;
-        _s3Service = s3Service;
     }
 
     [HttpPost]
     public async Task<ActionResult<KolDto>> CreateKol([FromForm] CreateKolDto createDto, IFormFile? avatar)
     {
+        Console.WriteLine($"CreateKol called with Name: {createDto.Name}");
+        Console.WriteLine($"Avatar file received: {avatar?.FileName ?? "null"}");
+        Console.WriteLine($"Avatar file size: {avatar?.Length ?? 0}");
+        
         if (string.IsNullOrEmpty(createDto.Name))
         {
             return BadRequest(new { error = "Name is required" });
@@ -39,21 +39,39 @@ public class KolsController : ControllerBase
         }
 
         var kol = _mapper.Map<Kol>(createDto);
-        var createdKol = await _kolRepository.CreateAsync(kol);
 
         if (avatar != null && avatar.Length > 0)
         {
-            var avatarUrl = await _s3Service.UploadFileAsync(avatar, $"kols/{createdKol.Id}");
-            createdKol.Avatar = avatarUrl;
-            await _kolRepository.UpdateAsync(createdKol.Id, createdKol);
+            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+            var extension = Path.GetExtension(avatar.FileName).ToLowerInvariant();
+            
+            if (!allowedExtensions.Contains(extension))
+            {
+                return BadRequest(new { error = "Invalid file type. Only JPG, PNG, and GIF files are allowed." });
+            }
+
+            if (avatar.Length > 5 * 1024 * 1024)
+            {
+                return BadRequest(new { error = "File size must be less than 5MB." });
+            }
+
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "avatars");
+            Directory.CreateDirectory(uploadsFolder);
+
+            var fileName = $"{Guid.NewGuid()}{extension}";
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await avatar.CopyToAsync(stream);
+            }
+
+            kol.Avatar = $"/uploads/avatars/{fileName}";
         }
+
+        var createdKol = await _kolRepository.CreateAsync(kol);
 
         var result = _mapper.Map<KolDto>(createdKol);
-        if (!string.IsNullOrEmpty(createdKol.Avatar))
-        {
-            result.Avatar = await _s3Service.GetPresignedUrlAsync(createdKol.Avatar, $"kols/{createdKol.Id}");
-        }
-
         return CreatedAtAction(nameof(GetKol), new { id = createdKol.Id }, result);
     }
 
@@ -67,21 +85,11 @@ public class KolsController : ControllerBase
         var (kols, totalCount) = await _kolRepository.GetPagedAsync(
             page,
             per_page,
-            filter: x => !x.Disabled &&
-                        (string.IsNullOrEmpty(name) || x.Name.Contains(name)) &&
+            filter: x => (string.IsNullOrEmpty(name) || x.Name.Contains(name)) &&
                         (!created_at.HasValue || x.CreatedAt >= created_at.Value)
         );
 
-        var kolDtos = new List<KolDto>();
-        foreach (var kol in kols)
-        {
-            var dto = _mapper.Map<KolDto>(kol);
-            if (!string.IsNullOrEmpty(kol.Avatar))
-            {
-                dto.Avatar = await _s3Service.GetPresignedUrlAsync(kol.Avatar, $"kols/{kol.Id}");
-            }
-            kolDtos.Add(dto);
-        }
+        var kolDtos = _mapper.Map<List<KolDto>>(kols);
 
         var totalPages = (int)Math.Ceiling((double)totalCount / per_page);
 
@@ -104,11 +112,6 @@ public class KolsController : ControllerBase
         }
 
         var result = _mapper.Map<KolDto>(kol);
-        if (!string.IsNullOrEmpty(kol.Avatar))
-        {
-            result.Avatar = await _s3Service.GetPresignedUrlAsync(kol.Avatar, $"kols/{kol.Id}");
-        }
-
         return Ok(result);
     }
 
@@ -125,24 +128,46 @@ public class KolsController : ControllerBase
 
         if (avatar != null && avatar.Length > 0)
         {
+            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+            var extension = Path.GetExtension(avatar.FileName).ToLowerInvariant();
+            
+            if (!allowedExtensions.Contains(extension))
+            {
+                return BadRequest(new { error = "Invalid file type. Only JPG, PNG, and GIF files are allowed." });
+            }
+
+            if (avatar.Length > 5 * 1024 * 1024)
+            {
+                return BadRequest(new { error = "File size must be less than 5MB." });
+            }
+
             // Delete old avatar if exists
             if (!string.IsNullOrEmpty(kol.Avatar))
             {
-                await _s3Service.DeleteFileAsync(kol.Avatar, $"kols/{id}");
+                var oldFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", kol.Avatar.TrimStart('/'));
+                if (System.IO.File.Exists(oldFilePath))
+                {
+                    System.IO.File.Delete(oldFilePath);
+                }
             }
 
-            var avatarUrl = await _s3Service.UploadFileAsync(avatar, $"kols/{id}");
-            kol.Avatar = avatarUrl;
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "avatars");
+            Directory.CreateDirectory(uploadsFolder);
+
+            var fileName = $"{Guid.NewGuid()}{extension}";
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await avatar.CopyToAsync(stream);
+            }
+
+            kol.Avatar = $"/uploads/avatars/{fileName}";
         }
 
         await _kolRepository.UpdateAsync(id, kol);
 
         var result = _mapper.Map<KolDto>(kol);
-        if (!string.IsNullOrEmpty(kol.Avatar))
-        {
-            result.Avatar = await _s3Service.GetPresignedUrlAsync(kol.Avatar, $"kols/{kol.Id}");
-        }
-
         return Ok(result);
     }
 
@@ -155,10 +180,14 @@ public class KolsController : ControllerBase
             return NotFound(new { error = "KOL not found" });
         }
 
-        // Delete avatar from S3 if exists
+        // Delete associated avatar file if exists
         if (!string.IsNullOrEmpty(kol.Avatar))
         {
-            await _s3Service.DeleteFileAsync(kol.Avatar, $"kols/{id}");
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", kol.Avatar.TrimStart('/'));
+            if (System.IO.File.Exists(filePath))
+            {
+                System.IO.File.Delete(filePath);
+            }
         }
 
         await _kolRepository.DeleteAsync(id);

@@ -1,5 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using HTC.Backend.DTOs;
+using HTC.Backend.Repositories;
+using HTC.Backend.Models;
+using AutoMapper;
 
 namespace HTC.Backend.Controllers;
 
@@ -7,9 +10,13 @@ namespace HTC.Backend.Controllers;
 [Route("api/[controller]")]
 public class ArtistsController : ControllerBase
 {
-    public ArtistsController()
+    private readonly IArtistRepository _artistRepository;
+    private readonly IMapper _mapper;
+
+    public ArtistsController(IArtistRepository artistRepository, IMapper mapper)
     {
-        // Mock data controller - no dependencies needed
+        _artistRepository = artistRepository;
+        _mapper = mapper;
     }
 
     [HttpGet]
@@ -20,62 +27,16 @@ public class ArtistsController : ControllerBase
         [FromQuery] string? name = null,
         [FromQuery] DateTime? created_at = null)
     {
-        // Mock data for demo
-        var mockArtists = new List<ArtistDto>
-        {
-            new ArtistDto
-            {
-                Id = "1",
-                Name = "John Artist",
-                Style = "Digital Art",
-                LinkX = "https://twitter.com/johnartist",
-                XTag = "johnartist",
-                Avatar = "https://via.placeholder.com/150",
-                Disabled = false,
-                TotalImage = 15,
-                CreatedAt = DateTime.UtcNow.AddDays(-10),
-                UpdatedAt = DateTime.UtcNow.AddDays(-5)
-            },
-            new ArtistDto
-            {
-                Id = "2",
-                Name = "Jane Creator",
-                Style = "3D Art",
-                LinkX = "https://twitter.com/janecreator",
-                XTag = "janecreator",
-                Avatar = "https://via.placeholder.com/150",
-                Disabled = false,
-                TotalImage = 8,
-                CreatedAt = DateTime.UtcNow.AddDays(-8),
-                UpdatedAt = DateTime.UtcNow.AddDays(-3)
-            },
-            new ArtistDto
-            {
-                Id = "3",
-                Name = "Bob Designer",
-                Style = "Concept Art",
-                LinkX = "https://twitter.com/bobdesigner",
-                XTag = "bobdesigner",
-                Avatar = "https://via.placeholder.com/150",
-                Disabled = false,
-                TotalImage = 22,
-                CreatedAt = DateTime.UtcNow.AddDays(-15),
-                UpdatedAt = DateTime.UtcNow.AddDays(-1)
-            }
-        };
+        var (artists, totalCount) = await _artistRepository.GetPagedAsync(
+            page,
+            per_page,
+            filter: x => (string.IsNullOrEmpty(style) || x.Style.Contains(style)) &&
+                        (string.IsNullOrEmpty(name) || x.Name.Contains(name)) &&
+                        (!created_at.HasValue || x.CreatedAt >= created_at.Value)
+        );
 
-        await Task.Delay(1); // Make it async
-
-        var filteredArtists = mockArtists.AsQueryable();
-
-        if (!string.IsNullOrEmpty(style))
-            filteredArtists = filteredArtists.Where(x => x.Style.Contains(style));
-        
-        if (!string.IsNullOrEmpty(name))
-            filteredArtists = filteredArtists.Where(x => x.Name.Contains(name));
-
-        var totalCount = filteredArtists.Count();
-        var pagedArtists = filteredArtists.Skip((page - 1) * per_page).Take(per_page).ToList();
+        Console.WriteLine($"Found {totalCount} artists, returning {artists.Count()} for page {page}");
+        var artistDtos = _mapper.Map<List<ArtistDto>>(artists);
         var totalPages = (int)Math.Ceiling((double)totalCount / per_page);
 
         return Ok(new PaginatedResultDto<ArtistDto>
@@ -83,36 +44,130 @@ public class ArtistsController : ControllerBase
             CurrentPage = page,
             TotalPages = totalPages,
             TotalRecords = totalCount,
-            Datas = pagedArtists
+            Datas = artistDtos
         });
     }
 
     [HttpGet("{id}")]
     public async Task<ActionResult<ArtistDto>> GetArtist(string id)
     {
-        await Task.Delay(1); // Make it async
-
-        // Mock artist data
-        var mockArtist = new ArtistDto
+        var artist = await _artistRepository.GetByIdAsync(id);
+        if (artist == null)
         {
-            Id = id,
-            Name = "John Artist",
-            Style = "Digital Art",
-            LinkX = "https://twitter.com/johnartist",
-            XTag = "johnartist",
-            Avatar = "https://via.placeholder.com/150",
-            Disabled = false,
-            TotalImage = 15,
-            CreatedAt = DateTime.UtcNow.AddDays(-10),
-            UpdatedAt = DateTime.UtcNow.AddDays(-5)
-        };
+            return NotFound(new { error = "Artist not found" });
+        }
 
-        return Ok(mockArtist);
+        var result = _mapper.Map<ArtistDto>(artist);
+        return Ok(result);
     }
 
-    // TODO: Implement other CRUD operations when MongoDB/S3 are configured
-    // [HttpPost]
-    // [HttpPut("{id}")]
-    // [HttpDelete("{id}")]
-    // [HttpGet("{id}/images")]
+    [HttpPost]
+    public async Task<ActionResult<ArtistDto>> CreateArtist([FromForm] CreateArtistDto createDto, IFormFile? avatar)
+    {
+        if (string.IsNullOrEmpty(createDto.Name))
+        {
+            return BadRequest(new { error = "Name is required" });
+        }
+
+        if (string.IsNullOrEmpty(createDto.Style))
+        {
+            return BadRequest(new { error = "Style is required" });
+        }
+
+        if (!string.IsNullOrEmpty(createDto.LinkX) && !Uri.IsWellFormedUriString(createDto.LinkX, UriKind.Absolute))
+        {
+            return BadRequest(new { error = "Invalid URL format for link_x" });
+        }
+
+        var artist = _mapper.Map<Artist>(createDto);
+        Console.WriteLine($"Creating artist: {artist.Name}, Style: {artist.Style}");
+        
+        // Handle avatar upload
+        if (avatar != null && avatar.Length > 0)
+        {
+            var uploadsPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "avatars");
+            if (!Directory.Exists(uploadsPath))
+            {
+                Directory.CreateDirectory(uploadsPath);
+            }
+
+            var fileExtension = Path.GetExtension(avatar.FileName);
+            var fileName = $"{Guid.NewGuid()}{fileExtension}";
+            var filePath = Path.Combine(uploadsPath, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await avatar.CopyToAsync(stream);
+            }
+
+            artist.Avatar = $"/uploads/avatars/{fileName}";
+        }
+        
+        var createdArtist = await _artistRepository.CreateAsync(artist);
+        Console.WriteLine($"Created artist with ID: {createdArtist.Id}");
+
+        var result = _mapper.Map<ArtistDto>(createdArtist);
+        return CreatedAtAction(nameof(GetArtist), new { id = createdArtist.Id }, result);
+    }
+
+    [HttpPut("{id}")]
+    public async Task<ActionResult<ArtistDto>> UpdateArtist(string id, [FromForm] UpdateArtistDto updateDto, IFormFile? avatar)
+    {
+        var artist = await _artistRepository.GetByIdAsync(id);
+        if (artist == null)
+        {
+            return NotFound(new { error = "Artist not found" });
+        }
+
+        _mapper.Map(updateDto, artist);
+        
+        // Handle avatar upload
+        if (avatar != null && avatar.Length > 0)
+        {
+            // Delete old avatar if exists
+            if (!string.IsNullOrEmpty(artist.Avatar))
+            {
+                var oldFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", artist.Avatar.TrimStart('/'));
+                if (System.IO.File.Exists(oldFilePath))
+                {
+                    System.IO.File.Delete(oldFilePath);
+                }
+            }
+
+            var uploadsPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "avatars");
+            if (!Directory.Exists(uploadsPath))
+            {
+                Directory.CreateDirectory(uploadsPath);
+            }
+
+            var fileExtension = Path.GetExtension(avatar.FileName);
+            var fileName = $"{Guid.NewGuid()}{fileExtension}";
+            var filePath = Path.Combine(uploadsPath, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await avatar.CopyToAsync(stream);
+            }
+
+            artist.Avatar = $"/uploads/avatars/{fileName}";
+        }
+        
+        await _artistRepository.UpdateAsync(id, artist);
+
+        var result = _mapper.Map<ArtistDto>(artist);
+        return Ok(result);
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<ActionResult> DeleteArtist(string id)
+    {
+        var artist = await _artistRepository.GetByIdAsync(id);
+        if (artist == null)
+        {
+            return NotFound(new { error = "Artist not found" });
+        }
+
+        await _artistRepository.DeleteAsync(id);
+        return Ok(new { message = "Artist deleted" });
+    }
 }

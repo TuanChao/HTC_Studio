@@ -1,14 +1,14 @@
 export type DetailArtist = {
   id: string;
   name: string;
-  link_x: string;
+  linkX: string;
   style: string;
   avatar: string;
-  x_tag: string;
-  total_image: number;
+  xTag: string;
+  totalImage: number;
   disabled?: boolean;
-  created_at?: string;
-  updated_at?: string;
+  createdAt?: string;
+  updatedAt?: string;
 };
 
 export type DetailMember = {

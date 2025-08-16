@@ -1,0 +1,51 @@
+.admin-kols {
+  padding: 24px;
+}
+
+.admin-kols-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.admin-kols-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.kols-table .ant-table-thead > tr > th {
+  background-color: #fafafa;
+  font-weight: 600;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.status-active {
+  color: #52c41a;
+  font-weight: 500;
+}
+
+.status-disabled {
+  color: #ff4d4f;
+  font-weight: 500;
+}
+
+.kol-form .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.kol-form .ant-upload-list {
+  margin-top: 8px;
+}
+
+.kol-form .ant-form-item-label > label {
+  font-weight: 500;
+}

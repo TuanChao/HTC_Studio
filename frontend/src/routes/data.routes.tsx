@@ -9,6 +9,8 @@ import RoadMapPage from "src/components/pages/RoadMap";
 import AdminLogin from "src/components/pages/Admin/AdminLogin";
 import AdminDashboard from "src/components/pages/Admin/AdminDashboard";
 import AdminArtists from "src/components/pages/Admin/AdminArtists";
+import AdminGalleries from "src/components/pages/Admin/AdminGalleries";
+import AdminKols from "src/components/pages/Admin/AdminKols";
 import routesName from "./enum.routes";
 import { IRouterData } from "./type.routes";
 
@@ -63,20 +65,24 @@ export const routesData: IRouterData[] = [
       </ProtectedRoute>
     ),
   },
-  // {
-  //   path: routesName.ADMIN_GALLERIES,
-  //   layout: AdminLayout,
-  //   component: () => <ProtectedRoute>
-  //     <AdminGalleries />
-  //     </ProtectedRoute>,
-  // },
-  // {
-  //   path: routesName.ADMIN_KOLS,
-  //   layout: AdminLayout,
-  //   component: () => <ProtectedRoute>
-  //     <AdminKols />
-  //     </ProtectedRoute>,
-  // },
+  {
+    path: routesName.ADMIN_GALLERIES,
+    layout: AdminLayout,
+    component: () => (
+      <ProtectedRoute>
+        <AdminGalleries />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: routesName.ADMIN_KOLS,
+    layout: AdminLayout,
+    component: () => (
+      <ProtectedRoute>
+        <AdminKols />
+      </ProtectedRoute>
+    ),
+  },
   // {
   //   path: routesName.ADMIN_TEAMS,
   //   layout: AdminLayout,

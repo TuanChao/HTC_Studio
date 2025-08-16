@@ -2,7 +2,6 @@ using AutoMapper;
 using HTC.Backend.DTOs;
 using HTC.Backend.Models;
 using HTC.Backend.Repositories;
-using HTC.Backend.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HTC.Backend.Controllers;
@@ -13,20 +12,17 @@ public class TeamsController : ControllerBase
 {
     private readonly ITeamRepository _teamRepository;
     private readonly IMapper _mapper;
-    private readonly IS3Service _s3Service;
 
     public TeamsController(
         ITeamRepository teamRepository,
-        IMapper mapper,
-        IS3Service s3Service)
+        IMapper mapper)
     {
         _teamRepository = teamRepository;
         _mapper = mapper;
-        _s3Service = s3Service;
     }
 
     [HttpPost]
-    public async Task<ActionResult<TeamDto>> CreateTeam([FromForm] CreateTeamDto createDto, IFormFile? avatar)
+    public async Task<ActionResult<TeamDto>> CreateTeam([FromForm] CreateTeamDto createDto)
     {
         if (string.IsNullOrEmpty(createDto.Name))
         {
@@ -41,19 +37,7 @@ public class TeamsController : ControllerBase
         var team = _mapper.Map<Team>(createDto);
         var createdTeam = await _teamRepository.CreateAsync(team);
 
-        if (avatar != null && avatar.Length > 0)
-        {
-            var avatarUrl = await _s3Service.UploadFileAsync(avatar, $"teams/{createdTeam.Id}");
-            createdTeam.Avatar = avatarUrl;
-            await _teamRepository.UpdateAsync(createdTeam.Id, createdTeam);
-        }
-
         var result = _mapper.Map<TeamDto>(createdTeam);
-        if (!string.IsNullOrEmpty(createdTeam.Avatar))
-        {
-            result.Avatar = await _s3Service.GetPresignedUrlAsync(createdTeam.Avatar, $"teams/{createdTeam.Id}");
-        }
-
         return CreatedAtAction(nameof(GetTeam), new { id = createdTeam.Id }, result);
     }
 
@@ -74,16 +58,7 @@ public class TeamsController : ControllerBase
                         (!created_at.HasValue || x.CreatedAt >= created_at.Value)
         );
 
-        var teamDtos = new List<TeamDto>();
-        foreach (var team in teams)
-        {
-            var dto = _mapper.Map<TeamDto>(team);
-            if (!string.IsNullOrEmpty(team.Avatar))
-            {
-                dto.Avatar = await _s3Service.GetPresignedUrlAsync(team.Avatar, $"teams/{team.Id}");
-            }
-            teamDtos.Add(dto);
-        }
+        var teamDtos = _mapper.Map<List<TeamDto>>(teams);
 
         var totalPages = (int)Math.Ceiling((double)totalCount / per_page);
 
@@ -106,16 +81,11 @@ public class TeamsController : ControllerBase
         }
 
         var result = _mapper.Map<TeamDto>(team);
-        if (!string.IsNullOrEmpty(team.Avatar))
-        {
-            result.Avatar = await _s3Service.GetPresignedUrlAsync(team.Avatar, $"teams/{team.Id}");
-        }
-
         return Ok(result);
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult<TeamDto>> UpdateTeam(string id, [FromForm] UpdateTeamDto updateDto, IFormFile? avatar)
+    public async Task<ActionResult<TeamDto>> UpdateTeam(string id, [FromForm] UpdateTeamDto updateDto)
     {
         var team = await _teamRepository.GetByIdAsync(id);
         if (team == null)
@@ -124,27 +94,9 @@ public class TeamsController : ControllerBase
         }
 
         _mapper.Map(updateDto, team);
-
-        if (avatar != null && avatar.Length > 0)
-        {
-            // Delete old avatar if exists
-            if (!string.IsNullOrEmpty(team.Avatar))
-            {
-                await _s3Service.DeleteFileAsync(team.Avatar, $"teams/{id}");
-            }
-
-            var avatarUrl = await _s3Service.UploadFileAsync(avatar, $"teams/{id}");
-            team.Avatar = avatarUrl;
-        }
-
         await _teamRepository.UpdateAsync(id, team);
 
         var result = _mapper.Map<TeamDto>(team);
-        if (!string.IsNullOrEmpty(team.Avatar))
-        {
-            result.Avatar = await _s3Service.GetPresignedUrlAsync(team.Avatar, $"teams/{team.Id}");
-        }
-
         return Ok(result);
     }
 
@@ -155,12 +107,6 @@ public class TeamsController : ControllerBase
         if (team == null)
         {
             return NotFound(new { error = "Team member not found" });
-        }
-
-        // Delete avatar from S3 if exists
-        if (!string.IsNullOrEmpty(team.Avatar))
-        {
-            await _s3Service.DeleteFileAsync(team.Avatar, $"teams/{id}");
         }
 
         await _teamRepository.DeleteAsync(id);

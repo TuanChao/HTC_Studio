@@ -27,8 +27,8 @@ export const useArtistList = ({ tab, page, totalPage, isFirstMount, handleChange
     getListArtist({ page: currPage })
       .then((res) => {
         setListArtist((prev) => {
-          tab === "Artist" && handleChangeTotal(res.total_pages);
-          setTotalArtist(res.total_records ?? 0);
+          tab === "Artist" && handleChangeTotal(res.totalPages);
+          setTotalArtist(res.totalRecords ?? 0);
 
           return currPage === 1 ? res.datas : [...prev, ...res.datas];
         });

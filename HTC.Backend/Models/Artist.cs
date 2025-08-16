@@ -22,6 +22,9 @@ public class Artist : BaseModel
 
     [BsonElement("disabled")]
     public bool Disabled { get; set; } = false;
+
+    [BsonElement("total_image")]
+    public long TotalImage { get; set; } = 0;
 }
 
 public class BsonCollectionAttribute : Attribute

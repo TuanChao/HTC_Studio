@@ -11,7 +11,7 @@ export type ImageList = {
 };
 
 export const TAB_BANNER_TEXT = {
-  Gallery: "Fan art",
+  Gallery: "Gallery",
   Artist: "Artist",
 };
 

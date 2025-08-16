@@ -8,7 +8,7 @@ public class ArtistDto : BaseDto
     public string? XTag { get; set; }
     public string? Avatar { get; set; }
     public bool Disabled { get; set; }
-    public long? TotalImage { get; set; }
+    public long TotalImage { get; set; }
 }
 
 public class CreateArtistDto
@@ -18,6 +18,7 @@ public class CreateArtistDto
     public string Style { get; set; } = string.Empty;
     public string? XTag { get; set; }
     public bool Disabled { get; set; } = false;
+    public long TotalImage { get; set; } = 0;
 }
 
 public class UpdateArtistDto
@@ -27,4 +28,5 @@ public class UpdateArtistDto
     public string? Style { get; set; }
     public string? XTag { get; set; }
     public bool? Disabled { get; set; }
+    public long? TotalImage { get; set; }
 }

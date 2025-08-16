@@ -23,7 +23,7 @@ import {
 } from '@ant-design/icons';
 import type { ColumnsType } from 'antd/es/table';
 import type { UploadFile } from 'antd/es/upload/interface';
-import { getListArtist } from 'src/apis/artists/getArtist';
+import { getListArtist, createArtist, updateArtist, deleteArtist } from 'src/apis/artists/getArtist';
 import { DetailArtist } from 'src/components/atoms/Artist/Artist.type';
 import './AdminArtists.css';
 
@@ -62,7 +62,7 @@ const AdminArtists: React.FC = () => {
       setArtists(response.datas);
       setPagination(prev => ({
         ...prev,
-        total: response.total_records,
+        total: response.totalRecords,
       }));
     } catch (error) {
       message.error('Failed to fetch artists');
@@ -84,8 +84,8 @@ const AdminArtists: React.FC = () => {
     form.setFieldsValue({
       name: artist.name,
       style: artist.style,
-      linkX: artist.link_x,
-      xTag: artist.x_tag,
+      linkX: artist.linkX,
+      xTag: artist.xTag,
       disabled: artist.disabled,
     });
     setFileList([]);
@@ -93,7 +93,7 @@ const AdminArtists: React.FC = () => {
 
   const handleDelete = async (id: string) => {
     try {
-      // TODO: Implement delete API call
+      await deleteArtist(id);
       message.success('Artist deleted successfully');
       fetchArtists();
     } catch (error) {
@@ -106,23 +106,27 @@ const AdminArtists: React.FC = () => {
       const formData = new FormData();
       formData.append('name', values.name);
       formData.append('style', values.style);
-      if (values.linkX) formData.append('link_x', values.linkX);
-      if (values.xTag) formData.append('x_tag', values.xTag);
+      if (values.linkX) formData.append('linkX', values.linkX);
+      if (values.xTag) formData.append('xTag', values.xTag);
       formData.append('disabled', values.disabled.toString());
+      formData.append('totalImage', '0');
 
+      // Add avatar file if selected
       if (fileList.length > 0 && fileList[0].originFileObj) {
         formData.append('avatar', fileList[0].originFileObj);
       }
 
       if (editingArtist) {
-        // TODO: Implement update API call
+        await updateArtist(editingArtist.id, formData);
         message.success('Artist updated successfully');
       } else {
-        // TODO: Implement create API call
+        await createArtist(formData);
         message.success('Artist created successfully');
       }
 
       setModalVisible(false);
+      form.resetFields();
+      setFileList([]);
       fetchArtists();
     } catch (error) {
       message.error(editingArtist ? 'Failed to update artist' : 'Failed to create artist');
@@ -144,7 +148,7 @@ const AdminArtists: React.FC = () => {
           <Image
             width={50}
             height={50}
-            src={avatar}
+            src={avatar.startsWith('http') ? avatar : `http://localhost:5000${avatar}`}
             style={{ borderRadius: '50%', objectFit: 'cover' }}
             fallback="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAADDCAYAAADQvc6UAAABRWlDQ1BJQ0MgUHJvZmlsZQAAKJFjYGASSSwoyGFhYGDIzSspCnJ3UoiIjFJgf8LAwSDCIMogwMCcmFxc4BgQ4ANUwgCjUcG3awyMIPqyLsis7PPOq3QdDFcvjV3jOD1boQVTPQrgSkktTgbSf4A4LbmgqISBgTEFyFYuLykAsTuAbJEioKOA7DkgdjqEvQHEToKwj4DVhAQ5A9k3gGyB5IxEoBmML4BsnSQk8XQkNtReEOBxcfXxUQg1Mjc0dyHgXNJBSWpFCYh2zi+oLMpMzyhRcASGUqqCZ16yno6CkYGRAQMDKMwhqj/fAIcloxgHQqxAjIHBEugw5sUIsSQpBobtQPdLciLEVJYzMPBHMDBsayhILEqEO4DxG0txmrERhM29nYGBddr//5/DGRjYNRkY/l7////39v///y4Dmn+LgeHANwDrkl1AuO+pmgAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAwqADAAQAAAABAAAAwwAAAAD9b/HnAAAHlklEQVR4Ae3dP3Ik1RnG4W+FgYxN"
           />
@@ -169,8 +173,8 @@ const AdminArtists: React.FC = () => {
     },
     {
       title: 'X Tag',
-      dataIndex: 'x_tag',
-      key: 'x_tag',
+      dataIndex: 'xTag',
+      key: 'xTag',
       render: (xTag: string) => xTag ? <Tag color="blue">@{xTag}</Tag> : '-',
     },
     {
@@ -185,14 +189,14 @@ const AdminArtists: React.FC = () => {
     },
     {
       title: 'Total Images',
-      dataIndex: 'total_image',
-      key: 'total_image',
+      dataIndex: 'totalImage',
+      key: 'totalImage',
       render: (count: number) => count || 0,
     },
     {
       title: 'Created At',
-      dataIndex: 'created_at',
-      key: 'created_at',
+      dataIndex: 'createdAt',
+      key: 'createdAt',
       render: (date: string) => new Date(date).toLocaleDateString(),
     },
     {

@@ -10,7 +10,7 @@ const GalleryTemplate: React.FC = () => {
   const { modalPreview, selectedIndex, onCloseModal } = useContext(GalleryContext);
 
   const renderTitle = () => {
-    const onClickArtist = () => window.open(modalPreview.detailArtist.link_x, "_blank", "noopener,noreferrer");
+    const onClickArtist = () => window.open(modalPreview.detailArtist.linkX, "_blank", "noopener,noreferrer");
 
     return (
       <div className="artist-preview-container">

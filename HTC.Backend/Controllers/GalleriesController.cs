@@ -2,7 +2,6 @@ using AutoMapper;
 using HTC.Backend.DTOs;
 using HTC.Backend.Models;
 using HTC.Backend.Repositories;
-using HTC.Backend.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HTC.Backend.Controllers;
@@ -14,22 +13,19 @@ public class GalleriesController : ControllerBase
     private readonly IGalleryRepository _galleryRepository;
     private readonly IArtistRepository _artistRepository;
     private readonly IMapper _mapper;
-    private readonly IS3Service _s3Service;
 
     public GalleriesController(
         IGalleryRepository galleryRepository,
         IArtistRepository artistRepository,
-        IMapper mapper,
-        IS3Service s3Service)
+        IMapper mapper)
     {
         _galleryRepository = galleryRepository;
         _artistRepository = artistRepository;
         _mapper = mapper;
-        _s3Service = s3Service;
     }
 
     [HttpPost]
-    public async Task<ActionResult<GalleryDto>> CreateGallery([FromForm] CreateGalleryDto createDto, IFormFile picture)
+    public async Task<ActionResult<GalleryDto>> CreateGallery([FromForm] CreateGalleryDto createDto, IFormFile? picture)
     {
         if (string.IsNullOrEmpty(createDto.ArtistId))
         {
@@ -42,21 +38,40 @@ public class GalleriesController : ControllerBase
             return BadRequest(new { error = "Artist not found" });
         }
 
-        if (picture == null || picture.Length == 0)
+        var gallery = _mapper.Map<Gallery>(createDto);
+
+        if (picture != null && picture.Length > 0)
         {
-            return BadRequest(new { error = "Picture is required" });
+            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+            var extension = Path.GetExtension(picture.FileName).ToLowerInvariant();
+            
+            if (!allowedExtensions.Contains(extension))
+            {
+                return BadRequest(new { error = "Invalid file type. Only JPG, PNG, and GIF files are allowed." });
+            }
+
+            if (picture.Length > 5 * 1024 * 1024)
+            {
+                return BadRequest(new { error = "File size must be less than 5MB." });
+            }
+
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "galleries");
+            Directory.CreateDirectory(uploadsFolder);
+
+            var fileName = $"{Guid.NewGuid()}{extension}";
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await picture.CopyToAsync(stream);
+            }
+
+            gallery.Picture = $"/uploads/galleries/{fileName}";
         }
 
-        var gallery = _mapper.Map<Gallery>(createDto);
         var createdGallery = await _galleryRepository.CreateAsync(gallery);
 
-        var pictureUrl = await _s3Service.UploadFileAsync(picture, $"galleries/{createdGallery.Id}");
-        createdGallery.Picture = pictureUrl;
-        await _galleryRepository.UpdateAsync(createdGallery.Id, createdGallery);
-
         var result = _mapper.Map<GalleryDto>(createdGallery);
-        result.Picture = await _s3Service.GetPresignedUrlAsync(createdGallery.Picture, $"galleries/{createdGallery.Id}");
-
         return CreatedAtAction(nameof(GetGallery), new { id = createdGallery.Id }, result);
     }
 
@@ -74,16 +89,7 @@ public class GalleriesController : ControllerBase
                         (!show_on_top.HasValue || x.ShowOnTop == show_on_top.Value)
         );
 
-        var galleryDtos = new List<GalleryDto>();
-        foreach (var gallery in galleries)
-        {
-            var dto = _mapper.Map<GalleryDto>(gallery);
-            if (!string.IsNullOrEmpty(gallery.Picture))
-            {
-                dto.Picture = await _s3Service.GetPresignedUrlAsync(gallery.Picture, $"galleries/{gallery.Id}");
-            }
-            galleryDtos.Add(dto);
-        }
+        var galleryDtos = _mapper.Map<List<GalleryDto>>(galleries);
 
         var totalPages = (int)Math.Ceiling((double)totalCount / per_page);
 
@@ -106,11 +112,6 @@ public class GalleriesController : ControllerBase
         }
 
         var result = _mapper.Map<GalleryDto>(gallery);
-        if (!string.IsNullOrEmpty(gallery.Picture))
-        {
-            result.Picture = await _s3Service.GetPresignedUrlAsync(gallery.Picture, $"galleries/{gallery.Id}");
-        }
-
         return Ok(result);
     }
 
@@ -127,24 +128,46 @@ public class GalleriesController : ControllerBase
 
         if (picture != null && picture.Length > 0)
         {
+            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+            var extension = Path.GetExtension(picture.FileName).ToLowerInvariant();
+            
+            if (!allowedExtensions.Contains(extension))
+            {
+                return BadRequest(new { error = "Invalid file type. Only JPG, PNG, and GIF files are allowed." });
+            }
+
+            if (picture.Length > 5 * 1024 * 1024)
+            {
+                return BadRequest(new { error = "File size must be less than 5MB." });
+            }
+
             // Delete old picture if exists
             if (!string.IsNullOrEmpty(gallery.Picture))
             {
-                await _s3Service.DeleteFileAsync(gallery.Picture, $"galleries/{id}");
+                var oldFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", gallery.Picture.TrimStart('/'));
+                if (System.IO.File.Exists(oldFilePath))
+                {
+                    System.IO.File.Delete(oldFilePath);
+                }
             }
 
-            var pictureUrl = await _s3Service.UploadFileAsync(picture, $"galleries/{id}");
-            gallery.Picture = pictureUrl;
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "galleries");
+            Directory.CreateDirectory(uploadsFolder);
+
+            var fileName = $"{Guid.NewGuid()}{extension}";
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await picture.CopyToAsync(stream);
+            }
+
+            gallery.Picture = $"/uploads/galleries/{fileName}";
         }
 
         await _galleryRepository.UpdateAsync(id, gallery);
 
         var result = _mapper.Map<GalleryDto>(gallery);
-        if (!string.IsNullOrEmpty(gallery.Picture))
-        {
-            result.Picture = await _s3Service.GetPresignedUrlAsync(gallery.Picture, $"galleries/{gallery.Id}");
-        }
-
         return Ok(result);
     }
 
@@ -157,10 +180,14 @@ public class GalleriesController : ControllerBase
             return NotFound(new { error = "Gallery not found" });
         }
 
-        // Delete picture from S3 if exists
+        // Delete associated picture file if exists
         if (!string.IsNullOrEmpty(gallery.Picture))
         {
-            await _s3Service.DeleteFileAsync(gallery.Picture, $"galleries/{id}");
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", gallery.Picture.TrimStart('/'));
+            if (System.IO.File.Exists(filePath))
+            {
+                System.IO.File.Delete(filePath);
+            }
         }
 
         await _galleryRepository.DeleteAsync(id);

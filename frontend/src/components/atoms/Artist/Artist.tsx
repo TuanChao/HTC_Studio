@@ -15,11 +15,11 @@ const Artist: React.FC<Props> = ({ type, detailMember, detailArtist, onSelectArt
   const avatarUrl = isArtist ? detailArtist?.avatar : detailMember?.avatar;
   const name = isArtist ? detailArtist?.name : detailMember?.name;
   const linkProfile = isArtist
-    ? `@${detailArtist?.link_x.split("x.com/")?.[1]?.split("?")[0]}`
+    ? `@${detailArtist?.linkX?.split("x.com/")?.[1]?.split("?")[0] || detailArtist?.xTag || 'unknown'}`
     : detailMember?.position;
   const description = isArtist ? detailArtist?.style : detailMember?.description;
-  const totalImage = detailArtist?.total_image;
-  const link = isArtist ? detailArtist?.link_x : undefined;
+  const totalImage = detailArtist?.totalImage;
+  const link = isArtist ? detailArtist?.linkX : undefined;
 
   const clickXLink = (x: string) => {
     window.open(x, "_blank", "noopener,noreferrer");
@@ -28,7 +28,13 @@ const Artist: React.FC<Props> = ({ type, detailMember, detailArtist, onSelectArt
   return (
     <div onClick={() => id && onSelectArtist(id)} className="artist-container">
       <div className="avatar-artist-container">
-        <img src={avatarUrl} alt={name} />
+        <img 
+          src={avatarUrl && avatarUrl.startsWith('http') ? avatarUrl : `http://localhost:5000${avatarUrl || '/images/default-avatar.png'}`} 
+          alt={name}
+          onError={(e) => {
+            e.currentTarget.src = '/images/default-avatar.png';
+          }}
+        />
       </div>
       <div className="artist-detail-container">
         <div className="artist-name">{name}</div>

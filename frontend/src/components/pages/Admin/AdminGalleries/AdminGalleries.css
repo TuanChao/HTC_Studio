@@ -1,0 +1,70 @@
+.admin-galleries {
+  padding: 24px;
+}
+
+.admin-galleries-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.admin-galleries-header h2 {
+  margin: 0;
+}
+
+.admin-galleries-table {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.picture-placeholder {
+  width: 60px;
+  height: 60px;
+  border: 2px dashed #d9d9d9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  background-color: #fafafa;
+}
+
+.picture-placeholder:hover {
+  border-color: #1890ff;
+  color: #1890ff;
+}
+
+/* Modal form styling */
+.ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.ant-upload.ant-upload-select-picture-card {
+  width: 100%;
+  height: 120px;
+}
+
+.ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item {
+  width: 100%;
+  height: 120px;
+}
+
+/* Table responsive */
+@media (max-width: 768px) {
+  .admin-galleries {
+    padding: 16px;
+  }
+  
+  .admin-galleries-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .admin-galleries-table .ant-table-tbody > tr > td {
+    padding: 8px;
+    font-size: 12px;
+  }
+}

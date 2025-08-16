@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\2a647097-3118-4a6b-9452-7747e2e38b22.webp",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\2a647097-3118-4a6b-9452-7747e2e38b22.webp"
+    },
+    {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\55476f96-8e15-4ef6-85c4-4b2dcd6c9628.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\55476f96-8e15-4ef6-85c4-4b2dcd6c9628.jpg"
+    },
+    {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\05eea885-b5d3-45a7-9dea-b866d01b1315.jpg",
+      "PackagePath": "staticwebassets\\uploads\\galleries\\05eea885-b5d3-45a7-9dea-b866d01b1315.jpg"
+    },
+    {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\49a5e626-4069-4506-84e8-25b52d721844.jpg",
+      "PackagePath": "staticwebassets\\uploads\\galleries\\49a5e626-4069-4506-84e8-25b52d721844.jpg"
+    },
+    {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\c569cead-89cd-47b2-ada7-89ddd1052446.jpg",
+      "PackagePath": "staticwebassets\\uploads\\galleries\\c569cead-89cd-47b2-ada7-89ddd1052446.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HTC.Backend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HTC.Backend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.HTC.Backend.props",
+      "PackagePath": "build\\HTC.Backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HTC.Backend.props",
+      "PackagePath": "buildMultiTargeting\\HTC.Backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.HTC.Backend.props",
+      "PackagePath": "buildTransitive\\HTC.Backend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
