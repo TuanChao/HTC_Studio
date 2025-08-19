@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('/Dragon_motor_11.jpg');
+  background-image: url("src/assets/images/Dragon_motor_11.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
   backdrop-filter: blur(2px);
 }
 
-.admin-login-container::after {
+/* .admin-login-container::after {
   content: '';
   position: absolute;
   top: 0;
@@ -39,9 +39,9 @@
     radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.3) 0%, transparent 50%),
     radial-gradient(circle at 40% 80%, rgba(102, 126, 234, 0.2) 0%, transparent 50%);
   animation: morphGradient 20s ease-in-out infinite;
-}
+} */
 
-@keyframes morphGradient {
+/* @keyframes morphGradient {
   0%, 100% { 
     background: 
       radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.3) 0%, transparent 50%),
@@ -60,7 +60,7 @@
       radial-gradient(circle at 20% 20%, rgba(118, 75, 162, 0.3) 0%, transparent 50%),
       radial-gradient(circle at 60% 40%, rgba(102, 126, 234, 0.2) 0%, transparent 50%);
   }
-}
+} */
 
 .admin-login-content {
   width: 100%;

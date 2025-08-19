@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "q81/7//DT/kW8+U3W3gO6C5Q4c8q9M+bu3JJwNZ6v3A=",
+  "Hash": "mVnFlwxz0qkmAxQA7X+7EynIk5+BTVL3rRog1sldPCM=",
   "Source": "HTC.Backend",
   "BasePath": "_content/HTC.Backend",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\02d05364-cc3e-4e57-a238-6023b5a68805.gif",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/avatars/02d05364-cc3e-4e57-a238-6023b5a68805#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3vpjvgrmmg",
+      "Integrity": "r/hYEpwoo7hoMMGn7roatu0DjUo4Do3rpWeu/d+sE98=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\avatars\\02d05364-cc3e-4e57-a238-6023b5a68805.gif"
+    },
     {
       "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\28d18235-e1a6-43e3-8f60-23f0093e2cf4.jpg",
       "SourceId": "HTC.Backend",
@@ -80,6 +101,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\avatars\\2e168208-735b-4316-8579-d0dceebdda5c.jpg"
     },
     {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\52687cbc-f3d4-43a6-8169-544a50b53578.gif",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/avatars/52687cbc-f3d4-43a6-8169-544a50b53578#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xnnaj83w6t",
+      "Integrity": "syaN5nW9c0fc+RwRwExk0/NAYjE7KyRuzAyLShAncXI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\avatars\\52687cbc-f3d4-43a6-8169-544a50b53578.gif"
+    },
+    {
       "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\55476f96-8e15-4ef6-85c4-4b2dcd6c9628.jpg",
       "SourceId": "HTC.Backend",
       "SourceType": "Discovered",
@@ -120,6 +162,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\avatars\\643ff371-2772-4d12-9ed6-9921c811757e.png"
+    },
+    {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\68fa91be-7156-425f-bbcc-5d785a26cfb6.gif",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/avatars/68fa91be-7156-425f-bbcc-5d785a26cfb6#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3vpjvgrmmg",
+      "Integrity": "r/hYEpwoo7hoMMGn7roatu0DjUo4Do3rpWeu/d+sE98=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\avatars\\68fa91be-7156-425f-bbcc-5d785a26cfb6.gif"
+    },
+    {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\7a192fd7-6102-46b6-bb59-8c04e3823f44.gif",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/avatars/7a192fd7-6102-46b6-bb59-8c04e3823f44#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9oghy29kja",
+      "Integrity": "V1fXliZjV1DQoh4HhWeH26ePFB8urDEtkAI76EXfuzc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\avatars\\7a192fd7-6102-46b6-bb59-8c04e3823f44.gif"
     },
     {
       "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\81b725a1-211e-44c4-b5d7-1414c4fd5718.jpg",
@@ -164,6 +248,48 @@
       "OriginalItemSpec": "wwwroot\\uploads\\avatars\\82e2e2cd-bc97-4727-9681-350bbc89aa86.jpg"
     },
     {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\8fec9718-c90f-4a5f-b6c2-f9960c83b195.gif",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/avatars/8fec9718-c90f-4a5f-b6c2-f9960c83b195#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dbebgfebu7",
+      "Integrity": "OWk7u8hWzX4anLyNsuK+d3a7HRJTTToujmgnwuur1kk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\avatars\\8fec9718-c90f-4a5f-b6c2-f9960c83b195.gif"
+    },
+    {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\9b1b4a18-0ea9-4d8f-ab4b-112e921a9b4a.gif",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/avatars/9b1b4a18-0ea9-4d8f-ab4b-112e921a9b4a#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cwv0gfqiag",
+      "Integrity": "hJIzWjCZPx32/4MIPjxHMLVpTKoQD63SftuQgU1PTD4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\avatars\\9b1b4a18-0ea9-4d8f-ab4b-112e921a9b4a.gif"
+    },
+    {
       "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\9f7da488-d358-4fd8-affc-0e5476d8d429.jpg",
       "SourceId": "HTC.Backend",
       "SourceType": "Discovered",
@@ -185,6 +311,69 @@
       "OriginalItemSpec": "wwwroot\\uploads\\avatars\\9f7da488-d358-4fd8-affc-0e5476d8d429.jpg"
     },
     {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\af1e0049-86ac-493b-a36a-312aea141dec.jpg",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/avatars/af1e0049-86ac-493b-a36a-312aea141dec#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x3lh1f02qm",
+      "Integrity": "47272MF0KoWZGgD9VVWu5TIiDWZLzNcja/RgLyKyXM8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\avatars\\af1e0049-86ac-493b-a36a-312aea141dec.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\b647f35a-1391-4efc-a1ae-3424cb4cb020.gif",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/avatars/b647f35a-1391-4efc-a1ae-3424cb4cb020#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qrmlscny08",
+      "Integrity": "hqJ7UUHi68gYCZbM3cj+Xa8dE9dJKg5uI/BPGR1UP/k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\avatars\\b647f35a-1391-4efc-a1ae-3424cb4cb020.gif"
+    },
+    {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\ce0226c9-e8ce-426a-a00c-acea348ca83a.gif",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/avatars/ce0226c9-e8ce-426a-a00c-acea348ca83a#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "75v3ei8440",
+      "Integrity": "a5ZO0PhH+GMZdcVr3R/S8XDFx92ajpkjWeWVrq6kVOE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\avatars\\ce0226c9-e8ce-426a-a00c-acea348ca83a.gif"
+    },
+    {
       "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\d3a2617f-f83c-43db-9b7c-554bdc6a852d.jpg",
       "SourceId": "HTC.Backend",
       "SourceType": "Discovered",
@@ -204,6 +393,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\avatars\\d3a2617f-f83c-43db-9b7c-554bdc6a852d.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\fd4eecbf-f701-43ec-9a5f-620c2cd594d7.gif",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/avatars/fd4eecbf-f701-43ec-9a5f-620c2cd594d7#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "78486poz4i",
+      "Integrity": "mS5eZRl8TnW3LXjq9DecMOT+hnWMi3zFEhMjJwcj42A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\avatars\\fd4eecbf-f701-43ec-9a5f-620c2cd594d7.gif"
     },
     {
       "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\05eea885-b5d3-45a7-9dea-b866d01b1315.jpg",
@@ -246,6 +456,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\galleries\\206c2bcf-fce2-441b-ac9d-439e1b115aec.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\2c81c9da-8d32-41cb-bfec-c6f431a00ddf.jpg",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/galleries/2c81c9da-8d32-41cb-bfec-c6f431a00ddf#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vig0n3rcse",
+      "Integrity": "p2ZDREWULH1gls1FgrTgATqjQg1K347qWrsF5s/x0lc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\galleries\\2c81c9da-8d32-41cb-bfec-c6f431a00ddf.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\309f632f-2701-4b99-b25d-7d04a68889c0.gif",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/galleries/309f632f-2701-4b99-b25d-7d04a68889c0#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xnnaj83w6t",
+      "Integrity": "syaN5nW9c0fc+RwRwExk0/NAYjE7KyRuzAyLShAncXI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\galleries\\309f632f-2701-4b99-b25d-7d04a68889c0.gif"
+    },
+    {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\3130e51e-137e-4c28-9cd6-91c85c6355ea.gif",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/galleries/3130e51e-137e-4c28-9cd6-91c85c6355ea#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dbebgfebu7",
+      "Integrity": "OWk7u8hWzX4anLyNsuK+d3a7HRJTTToujmgnwuur1kk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\galleries\\3130e51e-137e-4c28-9cd6-91c85c6355ea.gif"
     },
     {
       "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\49a5e626-4069-4506-84e8-25b52d721844.jpg",
@@ -311,6 +584,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\galleries\\c569cead-89cd-47b2-ada7-89ddd1052446.jpg"
     },
     {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\e50959f0-9782-4267-9109-d2487903eba7.gif",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/galleries/e50959f0-9782-4267-9109-d2487903eba7#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "75v3ei8440",
+      "Integrity": "a5ZO0PhH+GMZdcVr3R/S8XDFx92ajpkjWeWVrq6kVOE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\galleries\\e50959f0-9782-4267-9109-d2487903eba7.gif"
+    },
+    {
       "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\ea2dbd8d-fa41-426a-86e9-d11cde8e12c0.jpg",
       "SourceId": "HTC.Backend",
       "SourceType": "Discovered",
@@ -330,6 +624,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\galleries\\ea2dbd8d-fa41-426a-86e9-d11cde8e12c0.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\ee0b4234-60b8-45b4-8011-6fa364711686.gif",
+      "SourceId": "HTC.Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\",
+      "BasePath": "_content/HTC.Backend",
+      "RelativePath": "uploads/galleries/ee0b4234-60b8-45b4-8011-6fa364711686#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cwv0gfqiag",
+      "Integrity": "hJIzWjCZPx32/4MIPjxHMLVpTKoQD63SftuQgU1PTD4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\galleries\\ee0b4234-60b8-45b4-8011-6fa364711686.gif"
     },
     {
       "Identity": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\f14a6c8c-0156-4754-9eb9-3d1667c01091.jpg",
@@ -354,6 +669,88 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "uploads/avatars/02d05364-cc3e-4e57-a238-6023b5a68805.3vpjvgrmmg.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\02d05364-cc3e-4e57-a238-6023b5a68805.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "198567"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r/hYEpwoo7hoMMGn7roatu0DjUo4Do3rpWeu/d+sE98=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:52:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3vpjvgrmmg"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/avatars/02d05364-cc3e-4e57-a238-6023b5a68805.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r/hYEpwoo7hoMMGn7roatu0DjUo4Do3rpWeu/d+sE98="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/02d05364-cc3e-4e57-a238-6023b5a68805.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\02d05364-cc3e-4e57-a238-6023b5a68805.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "198567"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r/hYEpwoo7hoMMGn7roatu0DjUo4Do3rpWeu/d+sE98=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:52:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r/hYEpwoo7hoMMGn7roatu0DjUo4Do3rpWeu/d+sE98="
+        }
+      ]
+    },
     {
       "Route": "uploads/avatars/28d18235-e1a6-43e3-8f60-23f0093e2cf4.ewzitx74f1.jpg",
       "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\28d18235-e1a6-43e3-8f60-23f0093e2cf4.jpg",
@@ -601,6 +998,88 @@
       ]
     },
     {
+      "Route": "uploads/avatars/52687cbc-f3d4-43a6-8169-544a50b53578.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\52687cbc-f3d4-43a6-8169-544a50b53578.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226388"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"syaN5nW9c0fc+RwRwExk0/NAYjE7KyRuzAyLShAncXI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:58:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-syaN5nW9c0fc+RwRwExk0/NAYjE7KyRuzAyLShAncXI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/52687cbc-f3d4-43a6-8169-544a50b53578.xnnaj83w6t.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\52687cbc-f3d4-43a6-8169-544a50b53578.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226388"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"syaN5nW9c0fc+RwRwExk0/NAYjE7KyRuzAyLShAncXI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:58:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xnnaj83w6t"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/avatars/52687cbc-f3d4-43a6-8169-544a50b53578.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-syaN5nW9c0fc+RwRwExk0/NAYjE7KyRuzAyLShAncXI="
+        }
+      ]
+    },
+    {
       "Route": "uploads/avatars/55476f96-8e15-4ef6-85c4-4b2dcd6c9628.jpg",
       "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\55476f96-8e15-4ef6-85c4-4b2dcd6c9628.jpg",
       "Selectors": [],
@@ -761,6 +1240,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-CJ17a7X/yomVzTH5VkEzIgU3IkNxVU268KHxjK/+R/I="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/68fa91be-7156-425f-bbcc-5d785a26cfb6.3vpjvgrmmg.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\68fa91be-7156-425f-bbcc-5d785a26cfb6.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "198567"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r/hYEpwoo7hoMMGn7roatu0DjUo4Do3rpWeu/d+sE98=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:47:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3vpjvgrmmg"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/avatars/68fa91be-7156-425f-bbcc-5d785a26cfb6.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r/hYEpwoo7hoMMGn7roatu0DjUo4Do3rpWeu/d+sE98="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/68fa91be-7156-425f-bbcc-5d785a26cfb6.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\68fa91be-7156-425f-bbcc-5d785a26cfb6.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "198567"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r/hYEpwoo7hoMMGn7roatu0DjUo4Do3rpWeu/d+sE98=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:47:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r/hYEpwoo7hoMMGn7roatu0DjUo4Do3rpWeu/d+sE98="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/7a192fd7-6102-46b6-bb59-8c04e3823f44.9oghy29kja.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\7a192fd7-6102-46b6-bb59-8c04e3823f44.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "360887"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V1fXliZjV1DQoh4HhWeH26ePFB8urDEtkAI76EXfuzc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:52:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9oghy29kja"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/avatars/7a192fd7-6102-46b6-bb59-8c04e3823f44.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V1fXliZjV1DQoh4HhWeH26ePFB8urDEtkAI76EXfuzc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/7a192fd7-6102-46b6-bb59-8c04e3823f44.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\7a192fd7-6102-46b6-bb59-8c04e3823f44.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "360887"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V1fXliZjV1DQoh4HhWeH26ePFB8urDEtkAI76EXfuzc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:52:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V1fXliZjV1DQoh4HhWeH26ePFB8urDEtkAI76EXfuzc="
         }
       ]
     },
@@ -929,6 +1572,170 @@
       ]
     },
     {
+      "Route": "uploads/avatars/8fec9718-c90f-4a5f-b6c2-f9960c83b195.dbebgfebu7.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\8fec9718-c90f-4a5f-b6c2-f9960c83b195.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "283096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OWk7u8hWzX4anLyNsuK+d3a7HRJTTToujmgnwuur1kk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:58:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dbebgfebu7"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/avatars/8fec9718-c90f-4a5f-b6c2-f9960c83b195.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OWk7u8hWzX4anLyNsuK+d3a7HRJTTToujmgnwuur1kk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/8fec9718-c90f-4a5f-b6c2-f9960c83b195.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\8fec9718-c90f-4a5f-b6c2-f9960c83b195.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "283096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OWk7u8hWzX4anLyNsuK+d3a7HRJTTToujmgnwuur1kk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:58:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OWk7u8hWzX4anLyNsuK+d3a7HRJTTToujmgnwuur1kk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/9b1b4a18-0ea9-4d8f-ab4b-112e921a9b4a.cwv0gfqiag.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\9b1b4a18-0ea9-4d8f-ab4b-112e921a9b4a.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "183012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hJIzWjCZPx32/4MIPjxHMLVpTKoQD63SftuQgU1PTD4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:58:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cwv0gfqiag"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/avatars/9b1b4a18-0ea9-4d8f-ab4b-112e921a9b4a.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hJIzWjCZPx32/4MIPjxHMLVpTKoQD63SftuQgU1PTD4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/9b1b4a18-0ea9-4d8f-ab4b-112e921a9b4a.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\9b1b4a18-0ea9-4d8f-ab4b-112e921a9b4a.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "183012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hJIzWjCZPx32/4MIPjxHMLVpTKoQD63SftuQgU1PTD4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:58:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hJIzWjCZPx32/4MIPjxHMLVpTKoQD63SftuQgU1PTD4="
+        }
+      ]
+    },
+    {
       "Route": "uploads/avatars/9f7da488-d358-4fd8-affc-0e5476d8d429.jpg",
       "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\9f7da488-d358-4fd8-affc-0e5476d8d429.jpg",
       "Selectors": [],
@@ -1011,6 +1818,252 @@
       ]
     },
     {
+      "Route": "uploads/avatars/af1e0049-86ac-493b-a36a-312aea141dec.jpg",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\af1e0049-86ac-493b-a36a-312aea141dec.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2914567"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47272MF0KoWZGgD9VVWu5TIiDWZLzNcja/RgLyKyXM8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:45:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47272MF0KoWZGgD9VVWu5TIiDWZLzNcja/RgLyKyXM8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/af1e0049-86ac-493b-a36a-312aea141dec.x3lh1f02qm.jpg",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\af1e0049-86ac-493b-a36a-312aea141dec.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2914567"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47272MF0KoWZGgD9VVWu5TIiDWZLzNcja/RgLyKyXM8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:45:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x3lh1f02qm"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/avatars/af1e0049-86ac-493b-a36a-312aea141dec.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47272MF0KoWZGgD9VVWu5TIiDWZLzNcja/RgLyKyXM8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/b647f35a-1391-4efc-a1ae-3424cb4cb020.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\b647f35a-1391-4efc-a1ae-3424cb4cb020.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "340213"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hqJ7UUHi68gYCZbM3cj+Xa8dE9dJKg5uI/BPGR1UP/k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:58:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hqJ7UUHi68gYCZbM3cj+Xa8dE9dJKg5uI/BPGR1UP/k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/b647f35a-1391-4efc-a1ae-3424cb4cb020.qrmlscny08.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\b647f35a-1391-4efc-a1ae-3424cb4cb020.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "340213"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hqJ7UUHi68gYCZbM3cj+Xa8dE9dJKg5uI/BPGR1UP/k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:58:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qrmlscny08"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/avatars/b647f35a-1391-4efc-a1ae-3424cb4cb020.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hqJ7UUHi68gYCZbM3cj+Xa8dE9dJKg5uI/BPGR1UP/k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/ce0226c9-e8ce-426a-a00c-acea348ca83a.75v3ei8440.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\ce0226c9-e8ce-426a-a00c-acea348ca83a.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "138314"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a5ZO0PhH+GMZdcVr3R/S8XDFx92ajpkjWeWVrq6kVOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:52:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "75v3ei8440"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/avatars/ce0226c9-e8ce-426a-a00c-acea348ca83a.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-a5ZO0PhH+GMZdcVr3R/S8XDFx92ajpkjWeWVrq6kVOE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/ce0226c9-e8ce-426a-a00c-acea348ca83a.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\ce0226c9-e8ce-426a-a00c-acea348ca83a.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "138314"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a5ZO0PhH+GMZdcVr3R/S8XDFx92ajpkjWeWVrq6kVOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:52:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-a5ZO0PhH+GMZdcVr3R/S8XDFx92ajpkjWeWVrq6kVOE="
+        }
+      ]
+    },
+    {
       "Route": "uploads/avatars/d3a2617f-f83c-43db-9b7c-554bdc6a852d.jpg",
       "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\d3a2617f-f83c-43db-9b7c-554bdc6a852d.jpg",
       "Selectors": [],
@@ -1089,6 +2142,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-47272MF0KoWZGgD9VVWu5TIiDWZLzNcja/RgLyKyXM8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/fd4eecbf-f701-43ec-9a5f-620c2cd594d7.78486poz4i.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\fd4eecbf-f701-43ec-9a5f-620c2cd594d7.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "244152"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mS5eZRl8TnW3LXjq9DecMOT+hnWMi3zFEhMjJwcj42A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:53:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "78486poz4i"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/avatars/fd4eecbf-f701-43ec-9a5f-620c2cd594d7.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mS5eZRl8TnW3LXjq9DecMOT+hnWMi3zFEhMjJwcj42A="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/avatars/fd4eecbf-f701-43ec-9a5f-620c2cd594d7.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\fd4eecbf-f701-43ec-9a5f-620c2cd594d7.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "244152"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mS5eZRl8TnW3LXjq9DecMOT+hnWMi3zFEhMjJwcj42A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 04:53:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mS5eZRl8TnW3LXjq9DecMOT+hnWMi3zFEhMjJwcj42A="
         }
       ]
     },
@@ -1253,6 +2388,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-wqjWRTFFb1aGbOraUimkNsUt09UvAPwUnj/VNuvcs5A="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/galleries/2c81c9da-8d32-41cb-bfec-c6f431a00ddf.jpg",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\2c81c9da-8d32-41cb-bfec-c6f431a00ddf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1844366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p2ZDREWULH1gls1FgrTgATqjQg1K347qWrsF5s/x0lc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 07:44:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p2ZDREWULH1gls1FgrTgATqjQg1K347qWrsF5s/x0lc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/galleries/2c81c9da-8d32-41cb-bfec-c6f431a00ddf.vig0n3rcse.jpg",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\2c81c9da-8d32-41cb-bfec-c6f431a00ddf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1844366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p2ZDREWULH1gls1FgrTgATqjQg1K347qWrsF5s/x0lc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 07:44:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vig0n3rcse"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/galleries/2c81c9da-8d32-41cb-bfec-c6f431a00ddf.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p2ZDREWULH1gls1FgrTgATqjQg1K347qWrsF5s/x0lc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/galleries/309f632f-2701-4b99-b25d-7d04a68889c0.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\309f632f-2701-4b99-b25d-7d04a68889c0.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226388"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"syaN5nW9c0fc+RwRwExk0/NAYjE7KyRuzAyLShAncXI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 07:44:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-syaN5nW9c0fc+RwRwExk0/NAYjE7KyRuzAyLShAncXI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/galleries/309f632f-2701-4b99-b25d-7d04a68889c0.xnnaj83w6t.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\309f632f-2701-4b99-b25d-7d04a68889c0.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226388"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"syaN5nW9c0fc+RwRwExk0/NAYjE7KyRuzAyLShAncXI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 07:44:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xnnaj83w6t"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/galleries/309f632f-2701-4b99-b25d-7d04a68889c0.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-syaN5nW9c0fc+RwRwExk0/NAYjE7KyRuzAyLShAncXI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/galleries/3130e51e-137e-4c28-9cd6-91c85c6355ea.dbebgfebu7.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\3130e51e-137e-4c28-9cd6-91c85c6355ea.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "283096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OWk7u8hWzX4anLyNsuK+d3a7HRJTTToujmgnwuur1kk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 07:43:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dbebgfebu7"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/galleries/3130e51e-137e-4c28-9cd6-91c85c6355ea.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OWk7u8hWzX4anLyNsuK+d3a7HRJTTToujmgnwuur1kk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/galleries/3130e51e-137e-4c28-9cd6-91c85c6355ea.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\3130e51e-137e-4c28-9cd6-91c85c6355ea.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "283096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OWk7u8hWzX4anLyNsuK+d3a7HRJTTToujmgnwuur1kk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 07:43:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OWk7u8hWzX4anLyNsuK+d3a7HRJTTToujmgnwuur1kk="
         }
       ]
     },
@@ -1503,6 +2884,88 @@
       ]
     },
     {
+      "Route": "uploads/galleries/e50959f0-9782-4267-9109-d2487903eba7.75v3ei8440.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\e50959f0-9782-4267-9109-d2487903eba7.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "138314"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a5ZO0PhH+GMZdcVr3R/S8XDFx92ajpkjWeWVrq6kVOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 07:44:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "75v3ei8440"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/galleries/e50959f0-9782-4267-9109-d2487903eba7.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-a5ZO0PhH+GMZdcVr3R/S8XDFx92ajpkjWeWVrq6kVOE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/galleries/e50959f0-9782-4267-9109-d2487903eba7.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\e50959f0-9782-4267-9109-d2487903eba7.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "138314"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a5ZO0PhH+GMZdcVr3R/S8XDFx92ajpkjWeWVrq6kVOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 07:44:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-a5ZO0PhH+GMZdcVr3R/S8XDFx92ajpkjWeWVrq6kVOE="
+        }
+      ]
+    },
+    {
       "Route": "uploads/galleries/ea2dbd8d-fa41-426a-86e9-d11cde8e12c0.jpg",
       "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\ea2dbd8d-fa41-426a-86e9-d11cde8e12c0.jpg",
       "Selectors": [],
@@ -1581,6 +3044,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-gJVXvtaa9SAk49wmdKP7KipExPme7K42njCOl75g+n4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/galleries/ee0b4234-60b8-45b4-8011-6fa364711686.cwv0gfqiag.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\ee0b4234-60b8-45b4-8011-6fa364711686.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "183012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hJIzWjCZPx32/4MIPjxHMLVpTKoQD63SftuQgU1PTD4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 07:44:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cwv0gfqiag"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/galleries/ee0b4234-60b8-45b4-8011-6fa364711686.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hJIzWjCZPx32/4MIPjxHMLVpTKoQD63SftuQgU1PTD4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/galleries/ee0b4234-60b8-45b4-8011-6fa364711686.gif",
+      "AssetFile": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\ee0b4234-60b8-45b4-8011-6fa364711686.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "183012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hJIzWjCZPx32/4MIPjxHMLVpTKoQD63SftuQgU1PTD4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Aug 2025 07:44:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hJIzWjCZPx32/4MIPjxHMLVpTKoQD63SftuQgU1PTD4="
         }
       ]
     },

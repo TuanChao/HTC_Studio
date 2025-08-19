@@ -40,12 +40,13 @@
 
 /* Content Layout */
 .admin-content-layout {
-  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  /* background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%); */
+  background: #000000;
 }
 
 /* Header Styling */
 .admin-header {
-  background: rgba(255, 255, 255, 0.98);
+  background: #000000;
   backdrop-filter: blur(20px);
   padding: 0 28px;
   display: flex;
