@@ -1,74 +1,263 @@
+/* Modern Admin Dashboard Styles */
 .admin-dashboard {
   padding: 0;
+  position: relative;
 }
 
 .admin-dashboard-header {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.admin-dashboard-header::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border-radius: 2px;
 }
 
 .admin-dashboard-header h2 {
   margin-bottom: 8px !important;
+  background: linear-gradient(135deg, #1e293b, #64748b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 32px;
 }
 
+/* Stats Cards */
 .admin-dashboard-stats .ant-card {
   text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  border-radius: 16px;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  position: relative;
+}
+
+.admin-dashboard-stats .ant-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #1d4ed8, #7c3aed, #db2777);
 }
 
 .admin-dashboard-stats .ant-card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px) scale(1.02);
+}
+
+.admin-dashboard-stats .ant-card:nth-child(1)::before {
+  background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+}
+
+.admin-dashboard-stats .ant-card:nth-child(2)::before {
+  background: linear-gradient(90deg, #10b981, #047857);
+}
+
+.admin-dashboard-stats .ant-card:nth-child(3)::before {
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+}
+
+.admin-dashboard-stats .ant-card:nth-child(4)::before {
+  background: linear-gradient(90deg, #ef4444, #dc2626);
 }
 
 .admin-dashboard-stats .ant-statistic-content {
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 36px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #1e293b, #374151);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
+.admin-dashboard-stats .ant-statistic-title {
+  font-weight: 600;
+  color: #64748b;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Activity & Actions Cards */
 .admin-dashboard-activities,
 .admin-dashboard-actions {
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  border: none;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.admin-dashboard-activities .ant-card-head,
+.admin-dashboard-actions .ant-card-head {
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.admin-dashboard-activities .ant-card-head-title,
+.admin-dashboard-actions .ant-card-head-title {
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 18px;
+}
+
+.admin-dashboard-activities .ant-table-tbody > tr {
+  transition: all 0.3s ease;
 }
 
 .admin-dashboard-activities .ant-table-tbody > tr:hover > td {
-  background-color: #f5f5f5;
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9) !important;
+  transform: scale(1.01);
 }
 
+.admin-dashboard-activities .ant-table-thead > tr > th {
+  background: rgba(248, 250, 252, 0.8);
+  border-bottom: 2px solid #e2e8f0;
+  font-weight: 600;
+  color: #475569;
+}
+
+/* Action Buttons */
 .admin-dashboard-actions .ant-btn {
-  height: 48px;
+  height: 56px;
   font-size: 16px;
-  border-radius: 6px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 12px;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.admin-dashboard-actions .ant-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.admin-dashboard-actions .ant-btn:hover::before {
+  left: 100%;
 }
 
 .admin-dashboard-actions .ant-btn-primary {
-  background: linear-gradient(135deg, #1890ff, #096dd9);
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
   border: none;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.4);
+}
+
+.admin-dashboard-actions .ant-btn-primary:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.5);
 }
 
 .admin-dashboard-actions .ant-btn:not(.ant-btn-primary) {
-  border-color: #d9d9d9;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #e2e8f0;
+  color: #475569;
 }
 
 .admin-dashboard-actions .ant-btn:not(.ant-btn-primary):hover {
-  border-color: #1890ff;
-  color: #1890ff;
+  border-color: #3b82f6;
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.2);
+}
+
+/* Animation Enhancements */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.admin-dashboard-stats .ant-card {
+  animation: fadeInScale 0.6s ease-out;
+}
+
+.admin-dashboard-stats .ant-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.admin-dashboard-stats .ant-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.admin-dashboard-stats .ant-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.admin-dashboard-stats .ant-card:nth-child(4) {
+  animation-delay: 0.4s;
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .admin-dashboard-header h2 {
+    font-size: 28px;
+  }
+  
+  .admin-dashboard-stats .ant-statistic-content {
+    font-size: 32px;
+  }
+}
+
 @media (max-width: 768px) {
+  .admin-dashboard-header h2 {
+    font-size: 24px;
+  }
+  
+  .admin-dashboard-stats .ant-statistic-content {
+    font-size: 28px;
+  }
+  
+  .admin-dashboard-actions .ant-btn {
+    height: 48px;
+    font-size: 14px;
+  }
+  
+  .admin-dashboard-header {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 480px) {
   .admin-dashboard-stats .ant-statistic-content {
     font-size: 24px;
   }
   
   .admin-dashboard-actions .ant-btn {
     height: 44px;
-    font-size: 14px;
+    font-size: 13px;
+    gap: 8px;
   }
 }

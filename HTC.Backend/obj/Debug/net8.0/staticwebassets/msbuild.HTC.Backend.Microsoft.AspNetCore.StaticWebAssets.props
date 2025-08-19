@@ -1,5 +1,23 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\28d18235-e1a6-43e3-8f60-23f0093e2cf4.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>HTC.Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HTC.Backend</BasePath>
+      <RelativePath>uploads/avatars/28d18235-e1a6-43e3-8f60-23f0093e2cf4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ewzitx74f1</Fingerprint>
+      <Integrity>wqjWRTFFb1aGbOraUimkNsUt09UvAPwUnj/VNuvcs5A=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\28d18235-e1a6-43e3-8f60-23f0093e2cf4.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\2a647097-3118-4a6b-9452-7747e2e38b22.webp'))">
       <SourceType>Package</SourceType>
       <SourceId>HTC.Backend</SourceId>
@@ -17,6 +35,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\2a647097-3118-4a6b-9452-7747e2e38b22.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\2e168208-735b-4316-8579-d0dceebdda5c.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>HTC.Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HTC.Backend</BasePath>
+      <RelativePath>uploads/avatars/2e168208-735b-4316-8579-d0dceebdda5c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>3yu3epa9ip</Fingerprint>
+      <Integrity>a3FwS/1bp6AO1ZFZCPQseKnA6ZNm/9Z/RSZwXwQ4+9s=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\2e168208-735b-4316-8579-d0dceebdda5c.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\55476f96-8e15-4ef6-85c4-4b2dcd6c9628.jpg'))">
       <SourceType>Package</SourceType>
@@ -36,6 +72,96 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\55476f96-8e15-4ef6-85c4-4b2dcd6c9628.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\643ff371-2772-4d12-9ed6-9921c811757e.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>HTC.Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HTC.Backend</BasePath>
+      <RelativePath>uploads/avatars/643ff371-2772-4d12-9ed6-9921c811757e.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8swwhl5yuz</Fingerprint>
+      <Integrity>CJ17a7X/yomVzTH5VkEzIgU3IkNxVU268KHxjK/+R/I=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\643ff371-2772-4d12-9ed6-9921c811757e.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\81b725a1-211e-44c4-b5d7-1414c4fd5718.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>HTC.Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HTC.Backend</BasePath>
+      <RelativePath>uploads/avatars/81b725a1-211e-44c4-b5d7-1414c4fd5718.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ugsl6989y9</Fingerprint>
+      <Integrity>ojJ49HvCdJGzftud9gkvtwdiCyrYfuILWs9tKRKLckM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\81b725a1-211e-44c4-b5d7-1414c4fd5718.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\82e2e2cd-bc97-4727-9681-350bbc89aa86.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>HTC.Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HTC.Backend</BasePath>
+      <RelativePath>uploads/avatars/82e2e2cd-bc97-4727-9681-350bbc89aa86.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8f1u0w4r51</Fingerprint>
+      <Integrity>tOL/KTE2ssg6oXBrx+uBgu4KCcU+blPeODewSWhtmk0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\82e2e2cd-bc97-4727-9681-350bbc89aa86.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\9f7da488-d358-4fd8-affc-0e5476d8d429.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>HTC.Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HTC.Backend</BasePath>
+      <RelativePath>uploads/avatars/9f7da488-d358-4fd8-affc-0e5476d8d429.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>s6pz9giy49</Fingerprint>
+      <Integrity>RPNF1rESkcA2BzuQDKh2Je5q0L5nD6ABOV7WSjmWPoA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\9f7da488-d358-4fd8-affc-0e5476d8d429.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\d3a2617f-f83c-43db-9b7c-554bdc6a852d.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>HTC.Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HTC.Backend</BasePath>
+      <RelativePath>uploads/avatars/d3a2617f-f83c-43db-9b7c-554bdc6a852d.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x3lh1f02qm</Fingerprint>
+      <Integrity>47272MF0KoWZGgD9VVWu5TIiDWZLzNcja/RgLyKyXM8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\avatars\d3a2617f-f83c-43db-9b7c-554bdc6a852d.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\galleries\05eea885-b5d3-45a7-9dea-b866d01b1315.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>HTC.Backend</SourceId>
@@ -53,6 +179,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\galleries\05eea885-b5d3-45a7-9dea-b866d01b1315.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\galleries\206c2bcf-fce2-441b-ac9d-439e1b115aec.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>HTC.Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HTC.Backend</BasePath>
+      <RelativePath>uploads/galleries/206c2bcf-fce2-441b-ac9d-439e1b115aec.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ewzitx74f1</Fingerprint>
+      <Integrity>wqjWRTFFb1aGbOraUimkNsUt09UvAPwUnj/VNuvcs5A=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\galleries\206c2bcf-fce2-441b-ac9d-439e1b115aec.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\galleries\49a5e626-4069-4506-84e8-25b52d721844.jpg'))">
       <SourceType>Package</SourceType>
@@ -72,6 +216,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\galleries\49a5e626-4069-4506-84e8-25b52d721844.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\galleries\6b7a1cb3-c7d7-447f-b6b1-11cc2ab00a1f.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>HTC.Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HTC.Backend</BasePath>
+      <RelativePath>uploads/galleries/6b7a1cb3-c7d7-447f-b6b1-11cc2ab00a1f.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5varurwmnd</Fingerprint>
+      <Integrity>wRmKUAmZa7FZEW/6wa9MqP7X3L8Zuncri1Ce71VjjRM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\galleries\6b7a1cb3-c7d7-447f-b6b1-11cc2ab00a1f.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\galleries\c569cead-89cd-47b2-ada7-89ddd1052446.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>HTC.Backend</SourceId>
@@ -89,6 +251,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\galleries\c569cead-89cd-47b2-ada7-89ddd1052446.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\galleries\ea2dbd8d-fa41-426a-86e9-d11cde8e12c0.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>HTC.Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HTC.Backend</BasePath>
+      <RelativePath>uploads/galleries/ea2dbd8d-fa41-426a-86e9-d11cde8e12c0.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>w4dwn1vazl</Fingerprint>
+      <Integrity>gJVXvtaa9SAk49wmdKP7KipExPme7K42njCOl75g+n4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\galleries\ea2dbd8d-fa41-426a-86e9-d11cde8e12c0.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\galleries\f14a6c8c-0156-4754-9eb9-3d1667c01091.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>HTC.Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HTC.Backend</BasePath>
+      <RelativePath>uploads/galleries/f14a6c8c-0156-4754-9eb9-3d1667c01091.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>efr4q4xf0r</Fingerprint>
+      <Integrity>JuJ0cGim6OGUOjfT/EdEKhcWNi4WBztBruJu/B/CK54=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\galleries\f14a6c8c-0156-4754-9eb9-3d1667c01091.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

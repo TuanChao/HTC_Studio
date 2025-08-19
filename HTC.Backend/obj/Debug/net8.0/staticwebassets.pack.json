@@ -1,24 +1,68 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\28d18235-e1a6-43e3-8f60-23f0093e2cf4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\28d18235-e1a6-43e3-8f60-23f0093e2cf4.jpg"
+    },
+    {
       "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\2a647097-3118-4a6b-9452-7747e2e38b22.webp",
       "PackagePath": "staticwebassets\\uploads\\avatars\\2a647097-3118-4a6b-9452-7747e2e38b22.webp"
+    },
+    {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\2e168208-735b-4316-8579-d0dceebdda5c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\2e168208-735b-4316-8579-d0dceebdda5c.jpg"
     },
     {
       "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\55476f96-8e15-4ef6-85c4-4b2dcd6c9628.jpg",
       "PackagePath": "staticwebassets\\uploads\\avatars\\55476f96-8e15-4ef6-85c4-4b2dcd6c9628.jpg"
     },
     {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\643ff371-2772-4d12-9ed6-9921c811757e.png",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\643ff371-2772-4d12-9ed6-9921c811757e.png"
+    },
+    {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\81b725a1-211e-44c4-b5d7-1414c4fd5718.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\81b725a1-211e-44c4-b5d7-1414c4fd5718.jpg"
+    },
+    {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\82e2e2cd-bc97-4727-9681-350bbc89aa86.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\82e2e2cd-bc97-4727-9681-350bbc89aa86.jpg"
+    },
+    {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\9f7da488-d358-4fd8-affc-0e5476d8d429.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\9f7da488-d358-4fd8-affc-0e5476d8d429.jpg"
+    },
+    {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\d3a2617f-f83c-43db-9b7c-554bdc6a852d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\d3a2617f-f83c-43db-9b7c-554bdc6a852d.jpg"
+    },
+    {
       "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\05eea885-b5d3-45a7-9dea-b866d01b1315.jpg",
       "PackagePath": "staticwebassets\\uploads\\galleries\\05eea885-b5d3-45a7-9dea-b866d01b1315.jpg"
+    },
+    {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\206c2bcf-fce2-441b-ac9d-439e1b115aec.jpg",
+      "PackagePath": "staticwebassets\\uploads\\galleries\\206c2bcf-fce2-441b-ac9d-439e1b115aec.jpg"
     },
     {
       "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\49a5e626-4069-4506-84e8-25b52d721844.jpg",
       "PackagePath": "staticwebassets\\uploads\\galleries\\49a5e626-4069-4506-84e8-25b52d721844.jpg"
     },
     {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\6b7a1cb3-c7d7-447f-b6b1-11cc2ab00a1f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\galleries\\6b7a1cb3-c7d7-447f-b6b1-11cc2ab00a1f.jpg"
+    },
+    {
       "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\c569cead-89cd-47b2-ada7-89ddd1052446.jpg",
       "PackagePath": "staticwebassets\\uploads\\galleries\\c569cead-89cd-47b2-ada7-89ddd1052446.jpg"
+    },
+    {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\ea2dbd8d-fa41-426a-86e9-d11cde8e12c0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\galleries\\ea2dbd8d-fa41-426a-86e9-d11cde8e12c0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\f14a6c8c-0156-4754-9eb9-3d1667c01091.jpg",
+      "PackagePath": "staticwebassets\\uploads\\galleries\\f14a6c8c-0156-4754-9eb9-3d1667c01091.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HTC.Backend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
