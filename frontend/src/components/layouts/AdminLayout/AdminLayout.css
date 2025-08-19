@@ -1,45 +1,83 @@
+/* Modern Admin Layout Styles */
 .admin-layout {
   min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Sidebar Styling */
 .admin-sider {
   position: relative;
+  background: linear-gradient(180deg, #2d3748 0%, #1a202c 50%, #171923 100%);
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .admin-logo {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 16px;
-  border-bottom: 1px solid #303030;
-  margin-bottom: 16px;
+  padding: 20px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .admin-logo img {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
+.admin-logo h4 {
+  color: #e2e8f0 !important;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 !important;
+}
+
+/* Content Layout */
 .admin-content-layout {
-  background: #f0f2f5;
+  /* background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%); */
+  background: #000000;
 }
 
+/* Header Styling */
 .admin-header {
-  background: #fff;
-  padding: 0 24px;
+  background: #000000;
+  backdrop-filter: blur(20px);
+  padding: 0 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
   position: relative;
   z-index: 10;
+  height: 65px;
 }
 
 .admin-collapse-btn {
   font-size: 16px;
-  width: 64px;
-  height: 64px;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  border: 1px solid transparent;
+}
+
+.admin-collapse-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(102, 126, 234, 0.3);
+  border-color: #667eea;
 }
 
 .admin-header-right {
@@ -51,52 +89,218 @@
 .admin-user-info {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: background-color 0.3s;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
 }
 
 .admin-user-info:hover {
-  background-color: #f5f5f5;
+  background: #667eea;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 12px rgba(102, 126, 234, 0.3);
+  border-color: #667eea;
+}
+
+.admin-user-info:hover .admin-username {
+  color: white;
+}
+
+.admin-user-info:hover .ant-avatar {
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
 }
 
 .admin-username {
   font-weight: 500;
-  color: #333;
+  color: #475569;
+  font-size: 14px;
+  transition: color 0.3s ease;
 }
 
+/* Content Area */
 .admin-content {
-  margin: 24px;
-  padding: 24px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  min-height: calc(100vh - 112px);
+  margin: 20px;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  min-height: calc(100vh - 130px);
+  position: relative;
 }
 
-/* Dark theme adjustments */
+/* Menu Styling */
 .admin-sider .ant-menu-dark {
   background: transparent;
+  border: none;
+}
+
+.admin-sider .ant-menu-dark .ant-menu-item {
+  margin: 4px 12px;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.admin-sider .ant-menu-dark .ant-menu-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.admin-sider .ant-menu-dark .ant-menu-item:hover::before {
+  left: 100%;
 }
 
 .admin-sider .ant-menu-dark .ant-menu-item-selected {
-  background-color: #1890ff;
+  background: #667eea;
+  color: white;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  transform: translateX(2px);
 }
 
 .admin-sider .ant-menu-dark .ant-menu-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(2px);
+  color: white;
 }
 
-/* Responsive */
+.admin-sider .ant-menu-dark .ant-menu-item-selected .anticon,
+.admin-sider .ant-menu-dark .ant-menu-item-selected span {
+  color: white;
+}
+
+/* Scrollbar Styling */
+.admin-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.admin-content::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.admin-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border-radius: 4px;
+}
+
+.admin-content::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .admin-content {
+    margin: 20px;
+    padding: 24px;
+  }
+  
+  .admin-header {
+    padding: 0 20px;
+    height: 65px;
+  }
+  
+  .admin-logo {
+    padding: 16px;
+  }
+}
+
 @media (max-width: 768px) {
   .admin-content {
     margin: 16px;
-    padding: 16px;
+    padding: 20px;
+    border-radius: 12px;
   }
   
   .admin-header {
     padding: 0 16px;
+    height: 60px;
+  }
+  
+  .admin-logo h4 {
+    font-size: 14px;
+  }
+  
+  .admin-logo img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .admin-user-info {
+    padding: 8px 12px;
+  }
+  
+  .admin-username {
+    font-size: 13px;
+  }
+  
+  .admin-collapse-btn {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-content {
+    margin: 12px;
+    padding: 16px;
+  }
+  
+  .admin-header {
+    padding: 0 12px;
+  }
+  
+  .admin-user-info span {
+    display: none;
+  }
+  
+  .admin-sider .ant-menu-dark .ant-menu-item {
+    margin: 4px 8px;
+  }
+}
+
+/* Animation Enhancements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.admin-content {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .admin-content-layout {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  }
+  
+  .admin-content {
+    background: rgba(30, 41, 59, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .admin-header {
+    background: rgba(30, 41, 59, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 }

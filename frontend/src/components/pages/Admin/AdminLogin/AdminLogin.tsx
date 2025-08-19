@@ -112,9 +112,7 @@ const AdminLogin: React.FC = () => {
           <Divider />
 
           <div className="admin-login-footer">
-            <Paragraph type="secondary" className="admin-login-demo">
-              Demo credentials: <strong>admin</strong> / <strong>htcadmin2024</strong>
-            </Paragraph>
+            
           </div>
         </Card>
       </div>

@@ -20,8 +20,8 @@ class HttpRequest {
     return this.api.post(url, params, config);
   }
 
-  async put<T>(url: string, params: any = {}, config?: IConfig): Promise<T> {
-    return this.api.put(url, params, config);
+  async put<T>(url: string, params: any = {}, p0: { headers: { 'Content-Type': string; }; }): Promise<T> {
+    return this.api.put(url, params);
   }
 
   async patch<T>(url: string, params: any = {}, config?: IConfig): Promise<T> {

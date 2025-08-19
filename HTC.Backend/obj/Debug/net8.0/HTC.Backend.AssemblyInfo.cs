@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HTC.Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66ddfe27e4ae1508b4fad65abd38c162f90b4e1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f1c545de7a3924b1f03a24956099ea9d81c9b21")]
 [assembly: System.Reflection.AssemblyProductAttribute("HTC.Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HTC.Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
