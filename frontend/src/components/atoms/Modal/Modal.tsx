@@ -12,10 +12,11 @@ const ModalBase: React.FC<
     isShowFooter?: boolean;
     timeShowOverflowAuto?: number;
     onClose?: () => void;
+    onBackdropClick?: () => void;
   }
-> = (props) => {
+> = ({ isShow, isShowFooter, onBackdropClick, titleModal, footer, closeText, confirmText, timeShowOverflowAuto, onClose, ...props }) => {
   useEffect(() => {
-    if (props?.isShow) {
+    if (isShow) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
@@ -24,35 +25,37 @@ const ModalBase: React.FC<
     return () => {
       setTimeout(() => {
         document.body.style.overflow = "auto";
-      }, props?.timeShowOverflowAuto || 0);
+      }, timeShowOverflowAuto || 0);
     };
-  }, [props?.isShow, props?.timeShowOverflowAuto]);
+  }, [isShow, timeShowOverflowAuto]);
 
+  console.log('ModalBase render - isShow:', isShow, 'props children:', props.children);
+  
   return (
     <Modal
-      show={props?.isShow}
-      onHide={props?.onClose}
+      show={isShow}
+      onHide={onClose}
       size="lg"
       centered
       {...props}
       className="modal-base-container"
-      onBackdropClick={props?.onClose}
+      style={{ zIndex: 9999 }}
     >
       <Modal.Header closeButton>
-        <Modal.Title>{typeof props?.titleModal === "string" ? props.titleModal : props.titleModal ?? ""}</Modal.Title>
+        <Modal.Title>{typeof titleModal === "string" ? titleModal : titleModal ?? ""}</Modal.Title>
       </Modal.Header>
       <Modal.Body>{props?.children}</Modal.Body>
-      {props?.isShowFooter ? (
+      {isShowFooter ? (
         <Modal.Footer>
-          {props?.footer ? (
-            props?.footer
+          {footer ? (
+            footer
           ) : (
             <>
-              <Button variant="primary" onClick={props?.onClose}>
-                {props?.confirmText ?? "Ok"}
+              <Button variant="primary" onClick={onClose}>
+                {confirmText ?? "Ok"}
               </Button>
-              <Button variant="secondary" onClick={props?.onClose}>
-                {props?.closeText ?? "Close"}
+              <Button variant="secondary" onClick={onClose}>
+                {closeText ?? "Close"}
               </Button>
             </>
           )}

@@ -17,4 +17,5 @@ export type DetailMember = {
   description: string;
   avatar: string;
   position: string;
+  linkX?: string;
 };

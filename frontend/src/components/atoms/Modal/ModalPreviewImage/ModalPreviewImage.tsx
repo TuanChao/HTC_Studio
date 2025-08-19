@@ -11,6 +11,12 @@ const ModalPreviewImage: React.FC<Props> = ({ images, initialIndex = 0 }) => {
   const [listLoaded, setListLoaded] = useState<number[]>([]);
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
+  const getImageUrl = (picture: string) => {
+    if (!picture) return '/placeholder-image.jpg';
+    if (picture.startsWith('http')) return picture;
+    return `http://localhost:5000${picture}`;
+  };
+
   useEffect(() => {
     requestAnimationFrame(() => {
       if (videoRef.current && listLoaded.includes(currentIndex)) {
@@ -69,7 +75,7 @@ const ModalPreviewImage: React.FC<Props> = ({ images, initialIndex = 0 }) => {
                 ref={(el) => {
                   if (index === currentIndex) videoRef.current = el;
                 }}
-                src={image.picture}
+                src={getImageUrl(image.picture)}
                 className="video-preview"
                 controls
                 onLoadedData={() =>
@@ -79,7 +85,15 @@ const ModalPreviewImage: React.FC<Props> = ({ images, initialIndex = 0 }) => {
                 }
               />
             ) : (
-              <img className="d-block w-100 image-preview" src={image.picture} alt={`img ${image.id}`} />
+              <img 
+                className="d-block w-100 image-preview" 
+                src={getImageUrl(image.picture)} 
+                alt={`img ${image.id}`}
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = '/placeholder-image.jpg';
+                }}
+              />
             )}
           </Carousel.Item>
         ))}

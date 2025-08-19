@@ -38,14 +38,21 @@ export const useGalleryAction = () => {
   };
 
   const onSelectGallery = (id: string) => {
+    console.log('onSelectGallery called with id:', id);
     dispatch(setState({ loading: true }));
     getListGalleryImage({ id })
       .then((res) => {
+        console.log('getListGalleryImage response:', res);
         setModalPreview(() => {
           const index = res.pictures.findIndex((item) => item?.id?.toString() === id);
           setSelectedIndex(index === -1 ? 0 : index ?? 0);
-          return { isShow: true, imageList: res.pictures, detailArtist: res.artist };
+          const newState = { isShow: true, imageList: res.pictures, detailArtist: res.artist };
+          console.log('Setting modal state:', newState);
+          return newState;
         });
+      })
+      .catch((error) => {
+        console.error('Error in getListGalleryImage:', error);
       })
       .finally(() => dispatch(setState({ loading: false })));
   };

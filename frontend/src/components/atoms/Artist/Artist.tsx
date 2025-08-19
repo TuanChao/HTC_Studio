@@ -16,10 +16,12 @@ const Artist: React.FC<Props> = ({ type, detailMember, detailArtist, onSelectArt
   const name = isArtist ? detailArtist?.name : detailMember?.name;
   const linkProfile = isArtist
     ? `@${detailArtist?.linkX?.split("x.com/")?.[1]?.split("?")[0] || detailArtist?.xTag || 'unknown'}`
-    : detailMember?.position;
+    : detailMember?.linkX 
+      ? `@${detailMember?.linkX?.split("x.com/")?.[1]?.split("?")[0] || 'unknown'}`
+      : detailMember?.position;
   const description = isArtist ? detailArtist?.style : detailMember?.description;
   const totalImage = detailArtist?.totalImage;
-  const link = isArtist ? detailArtist?.linkX : undefined;
+  const link = isArtist ? detailArtist?.linkX : detailMember?.linkX;
 
   const clickXLink = (x: string) => {
     window.open(x, "_blank", "noopener,noreferrer");
@@ -39,7 +41,7 @@ const Artist: React.FC<Props> = ({ type, detailMember, detailArtist, onSelectArt
       <div className="artist-detail-container">
         <div className="artist-name">{name}</div>
         <div
-          className={`artist-link ${isArtist ? "artist" : ""}`}
+          className={`artist-link ${isArtist ? "artist" : ""} ${link ? "clickable" : ""}`}
           onClick={
             link
               ? (e) => {
@@ -51,6 +53,12 @@ const Artist: React.FC<Props> = ({ type, detailMember, detailArtist, onSelectArt
         >
           {linkProfile}
         </div>
+
+        {!isArtist && !detailMember?.linkX && (
+          <div className="team-position">
+            {detailMember?.position}
+          </div>
+        )}
 
         {isArtist && (
           <div className="total-image-container">
@@ -66,7 +74,7 @@ const Artist: React.FC<Props> = ({ type, detailMember, detailArtist, onSelectArt
               <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z" />
             </svg>
             <p>
-              {totalImage} {totalImage !== undefined && totalImage > 1 ? "Images" : "Image"} on Fan Art
+              {totalImage} {totalImage !== undefined && totalImage > 1 ? "Images" : "Image"} on Gallery
             </p>
           </div>
         )}

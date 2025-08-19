@@ -11,11 +11,13 @@ namespace HTC.Backend.Controllers;
 public class ArtistsController : ControllerBase
 {
     private readonly IArtistRepository _artistRepository;
+    private readonly IGalleryRepository _galleryRepository;
     private readonly IMapper _mapper;
 
-    public ArtistsController(IArtistRepository artistRepository, IMapper mapper)
+    public ArtistsController(IArtistRepository artistRepository, IGalleryRepository galleryRepository, IMapper mapper)
     {
         _artistRepository = artistRepository;
+        _galleryRepository = galleryRepository;
         _mapper = mapper;
     }
 
@@ -36,7 +38,23 @@ public class ArtistsController : ControllerBase
         );
 
         Console.WriteLine($"Found {totalCount} artists, returning {artists.Count()} for page {page}");
-        var artistDtos = _mapper.Map<List<ArtistDto>>(artists);
+        
+        // Calculate total images for each artist
+        var artistDtos = new List<ArtistDto>();
+        foreach (var artist in artists)
+        {
+            var artistDto = _mapper.Map<ArtistDto>(artist);
+            
+            // Count galleries for this artist
+            var (artistGalleries, galleryCount) = await _galleryRepository.GetPagedAsync(
+                1, 1000, // Get all galleries
+                filter: g => g.ArtistId == artist.Id
+            );
+            
+            artistDto.TotalImage = (int)galleryCount;
+            artistDtos.Add(artistDto);
+        }
+        
         var totalPages = (int)Math.Ceiling((double)totalCount / per_page);
 
         return Ok(new PaginatedResultDto<ArtistDto>
@@ -58,6 +76,14 @@ public class ArtistsController : ControllerBase
         }
 
         var result = _mapper.Map<ArtistDto>(artist);
+        
+        // Count galleries for this artist
+        var (artistGalleries, galleryCount) = await _galleryRepository.GetPagedAsync(
+            1, 1000, // Get all galleries
+            filter: g => g.ArtistId == artist.Id
+        );
+        
+        result.TotalImage = (int)galleryCount;
         return Ok(result);
     }
 
@@ -156,6 +182,42 @@ public class ArtistsController : ControllerBase
 
         var result = _mapper.Map<ArtistDto>(artist);
         return Ok(result);
+    }
+
+    [HttpGet("{id}/images")]
+    public async Task<ActionResult> GetArtistImages(string id)
+    {
+        var artist = await _artistRepository.GetByIdAsync(id);
+        if (artist == null)
+        {
+            return NotFound(new { error = "Artist not found" });
+        }
+
+        // Get all galleries from this artist
+        var (galleries, _) = await _galleryRepository.GetPagedAsync(
+            1, 
+            1000, // Large number to get all
+            filter: x => x.ArtistId == id
+        );
+
+        var pictures = galleries.Select(g => new 
+        {
+            id = g.Id,
+            picture = g.Picture,
+            alt = $"Gallery image {g.Id}",
+            artist_id = g.ArtistId,
+            created_at = g.CreatedAt.ToString("yyyy-MM-ddTHH:mm:ss.fffZ"),
+            show_on_top = g.ShowOnTop,
+            updated_at = g.UpdatedAt.ToString("yyyy-MM-ddTHH:mm:ss.fffZ")
+        }).ToList();
+
+        var artistDto = _mapper.Map<ArtistDto>(artist);
+
+        return Ok(new 
+        {
+            pictures = pictures,
+            artist = artistDto
+        });
     }
 
     [HttpDelete("{id}")]

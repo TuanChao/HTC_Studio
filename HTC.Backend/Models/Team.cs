@@ -17,6 +17,9 @@ public class Team : BaseModel
     [BsonElement("position")]
     public string Position { get; set; } = string.Empty;
 
+    [BsonElement("link_x")]
+    public string? LinkX { get; set; }
+
     [BsonElement("disabled")]
     public bool Disabled { get; set; } = false;
 }

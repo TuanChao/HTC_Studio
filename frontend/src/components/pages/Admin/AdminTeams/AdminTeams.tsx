@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Table, Button, Modal, Form, Input, Switch, Upload, message, Popconfirm, Image } from 'antd';
-import { PlusOutlined, EditOutlined, DeleteOutlined, UploadOutlined, UserOutlined } from '@ant-design/icons';
+import { PlusOutlined, EditOutlined, DeleteOutlined, UploadOutlined, TeamOutlined } from '@ant-design/icons';
 import type { ColumnsType } from 'antd/es/table';
 import type { UploadFile } from 'antd/es/upload';
-import { getKols, createKol, updateKol, deleteKol, KolDto, CreateKolDto, UpdateKolDto } from 'src/apis/kols/getKols';
-import './AdminKols.css';
+import { getTeams, createTeam, updateTeam, deleteTeam, TeamDto, CreateTeamDto, UpdateTeamDto } from 'src/apis/teams/getTeams';
+import './AdminTeams.css';
 
-const AdminKols: React.FC = () => {
-  const [kols, setKols] = useState<KolDto[]>([]);
+const { TextArea } = Input;
+
+const AdminTeams: React.FC = () => {
+  const [teams, setTeams] = useState<TeamDto[]>([]);
   const [loading, setLoading] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
-  const [editingKol, setEditingKol] = useState<KolDto | null>(null);
+  const [editingTeam, setEditingTeam] = useState<TeamDto | null>(null);
   const [form] = Form.useForm();
   const [fileList, setFileList] = useState<UploadFile[]>([]);
   const [pagination, setPagination] = useState({
@@ -19,30 +21,30 @@ const AdminKols: React.FC = () => {
     total: 0,
   });
 
-  const fetchKols = async (page: number = 1, pageSize: number = 10) => {
+  const fetchTeams = async (page: number = 1, pageSize: number = 10) => {
     setLoading(true);
     try {
-      const response = await getKols(page, pageSize);
-      setKols(response.datas);
+      const response = await getTeams(page, pageSize);
+      setTeams(response.datas);
       setPagination({
         current: page,
         pageSize: pageSize,
         total: response.totalRecords,
       });
     } catch (error) {
-      message.error('Failed to fetch KOLs');
-      console.error('Error fetching KOLs:', error);
+      message.error('Failed to fetch team members');
+      console.error('Error fetching teams:', error);
     } finally {
       setLoading(false);
     }
   };
 
   useEffect(() => {
-    fetchKols();
+    fetchTeams();
   }, []);
 
   const handleTableChange = (pagination: any) => {
-    fetchKols(pagination.current, pagination.pageSize);
+    fetchTeams(pagination.current, pagination.pageSize);
   };
 
   const getAvatarUrl = (avatar: string | undefined) => {
@@ -51,7 +53,7 @@ const AdminKols: React.FC = () => {
     return `http://localhost:5000${avatar}`;
   };
 
-  const columns: ColumnsType<KolDto> = [
+  const columns: ColumnsType<TeamDto> = [
     {
       title: 'Avatar',
       dataIndex: 'avatar',
@@ -68,7 +70,7 @@ const AdminKols: React.FC = () => {
           />
         ) : (
           <div className="avatar-placeholder">
-            <UploadOutlined />
+            <TeamOutlined />
           </div>
         )
       ),
@@ -80,6 +82,12 @@ const AdminKols: React.FC = () => {
       sorter: true,
     },
     {
+      title: 'Position',
+      dataIndex: 'position',
+      key: 'position',
+      sorter: true,
+    },
+    {
       title: 'Link X',
       dataIndex: 'linkX',
       key: 'linkX',
@@ -88,6 +96,13 @@ const AdminKols: React.FC = () => {
           {linkX}
         </a>
       ) : '-',
+    },
+    {
+      title: 'Description',
+      dataIndex: 'description',
+      key: 'description',
+      render: (description: string) => description || '-',
+      ellipsis: true,
     },
     {
       title: 'Status',
@@ -117,7 +132,7 @@ const AdminKols: React.FC = () => {
             onClick={() => handleEdit(record)}
           />
           <Popconfirm
-            title="Are you sure you want to delete this KOL?"
+            title="Are you sure you want to delete this team member?"
             onConfirm={() => handleDelete(record.id)}
             okText="Yes"
             cancelText="No"
@@ -134,37 +149,39 @@ const AdminKols: React.FC = () => {
   ];
 
   const handleAdd = () => {
-    setEditingKol(null);
+    setEditingTeam(null);
     setModalVisible(true);
     form.resetFields();
     setFileList([]);
   };
 
-  const handleEdit = (kol: KolDto) => {
-    setEditingKol(kol);
+  const handleEdit = (team: TeamDto) => {
+    setEditingTeam(team);
     setModalVisible(true);
     form.setFieldsValue({
-      name: kol.name,
-      linkX: kol.linkX,
-      disabled: kol.disabled,
+      name: team.name,
+      description: team.description,
+      position: team.position,
+      linkX: team.linkX,
+      disabled: team.disabled,
     });
     setFileList([]);
   };
 
   const handleDelete = async (id: string) => {
     try {
-      await deleteKol(id);
-      message.success('KOL deleted successfully');
-      fetchKols(pagination.current, pagination.pageSize);
+      await deleteTeam(id);
+      message.success('Team member deleted successfully');
+      fetchTeams(pagination.current, pagination.pageSize);
     } catch (error) {
-      message.error('Failed to delete KOL');
-      console.error('Error deleting KOL:', error);
+      message.error('Failed to delete team member');
+      console.error('Error deleting team member:', error);
     }
   };
 
-  const handleSubmit = async (values: CreateKolDto | UpdateKolDto) => {
+  const handleSubmit = async (values: CreateTeamDto | UpdateTeamDto) => {
     try {
-      console.log('=== KOL Form Submit ===');
+      console.log('=== Team Form Submit ===');
       console.log('Values:', values);
       console.log('FileList length:', fileList.length);
       if (fileList.length > 0) {
@@ -187,39 +204,38 @@ const AdminKols: React.FC = () => {
         console.log('❌ No avatar file');
       }
 
-      if (editingKol) {
-        await updateKol(editingKol.id, formData);
-        message.success('KOL updated successfully');
+      if (editingTeam) {
+        await updateTeam(editingTeam.id, formData);
+        message.success('Team member updated successfully');
       } else {
-        await createKol(formData);
-        message.success('KOL created successfully');
+        await createTeam(formData);
+        message.success('Team member created successfully');
       }
 
       setModalVisible(false);
-      fetchKols(pagination.current, pagination.pageSize);
+      fetchTeams(pagination.current, pagination.pageSize);
     } catch (error) {
-      message.error(editingKol ? 'Failed to update KOL' : 'Failed to create KOL');
-      console.error('Error submitting KOL:', error);
+      message.error(editingTeam ? 'Failed to update team member' : 'Failed to create team member');
+      console.error('Error submitting team member:', error);
     }
   };
 
-
   return (
-    <div className="admin-kols">
-      <div className="admin-kols-header">
-        <h2>KOL Management</h2>
+    <div className="admin-teams">
+      <div className="admin-teams-header">
+        <h2>Team Management</h2>
         <Button
           type="primary"
           icon={<PlusOutlined />}
           onClick={handleAdd}
         >
-          Add KOL
+          Add Team Member
         </Button>
       </div>
 
       <Table
         columns={columns}
-        dataSource={kols}
+        dataSource={teams}
         rowKey="id"
         loading={loading}
         pagination={{
@@ -230,11 +246,11 @@ const AdminKols: React.FC = () => {
             `${range[0]}-${range[1]} of ${total} items`,
         }}
         onChange={handleTableChange}
-        className="kols-table"
+        className="teams-table"
       />
 
       <Modal
-        title={editingKol ? 'Edit KOL' : 'Add New KOL'}
+        title={editingTeam ? 'Edit Team Member' : 'Add New Team Member'}
         open={modalVisible}
         onCancel={() => setModalVisible(false)}
         footer={null}
@@ -244,14 +260,22 @@ const AdminKols: React.FC = () => {
           form={form}
           layout="vertical"
           onFinish={handleSubmit}
-          className="kol-form"
+          className="team-form"
         >
           <Form.Item
             label="Name"
             name="name"
-            rules={[{ required: true, message: 'Please enter KOL name' }]}
+            rules={[{ required: true, message: 'Please enter team member name' }]}
           >
-            <Input placeholder="Enter KOL name" />
+            <Input placeholder="Enter team member name" />
+          </Form.Item>
+
+          <Form.Item
+            label="Position"
+            name="position"
+            rules={[{ required: true, message: 'Please enter position' }]}
+          >
+            <Input placeholder="Enter position (e.g., CEO, CTO, Designer)" />
           </Form.Item>
 
           <Form.Item
@@ -259,6 +283,18 @@ const AdminKols: React.FC = () => {
             name="linkX"
           >
             <Input placeholder="Enter X/Twitter link" />
+          </Form.Item>
+
+          <Form.Item
+            label="Description"
+            name="description"
+          >
+            <TextArea
+              rows={4}
+              placeholder="Enter team member description..."
+              maxLength={500}
+              showCount
+            />
           </Form.Item>
 
           <Form.Item
@@ -298,7 +334,7 @@ const AdminKols: React.FC = () => {
               Cancel
             </Button>
             <Button type="primary" htmlType="submit">
-              {editingKol ? 'Update' : 'Create'}
+              {editingTeam ? 'Update' : 'Create'}
             </Button>
           </Form.Item>
         </Form>
@@ -307,4 +343,4 @@ const AdminKols: React.FC = () => {
   );
 };
 
-export default AdminKols;
+export default AdminTeams;

@@ -46,47 +46,25 @@ const AdminDashboard: React.FC = () => {
 
   const fetchDashboardData = async () => {
     try {
-      // TODO: Replace with actual API calls
-      // Mock data for now
-      setStats({
-        artists: 15,
-        galleries: 127,
-        kols: 8,
-        teams: 12,
-      });
+      // Fetch real stats from API
+      const statsResponse = await fetch('http://localhost:5000/api/dashboard/stats');
+      const statsData = await statsResponse.json();
+      setStats(statsData);
 
-      setRecentActivities([
-        {
-          id: '1',
-          type: 'artist',
-          action: 'created',
-          name: 'New Artist: John Doe',
-          time: '2 hours ago',
-        },
-        {
-          id: '2',
-          type: 'gallery',
-          action: 'updated',
-          name: 'Gallery: Summer Collection',
-          time: '4 hours ago',
-        },
-        {
-          id: '3',
-          type: 'kol',
-          action: 'created',
-          name: 'KOL: Jane Smith',
-          time: '1 day ago',
-        },
-        {
-          id: '4',
-          type: 'team',
-          action: 'updated',
-          name: 'Team Member: Bob Wilson',
-          time: '2 days ago',
-        },
-      ]);
+      // Fetch real activities from API  
+      const activitiesResponse = await fetch('http://localhost:5000/api/dashboard/activities');
+      const activitiesData = await activitiesResponse.json();
+      setRecentActivities(activitiesData);
     } catch (error) {
       console.error('Failed to fetch dashboard data:', error);
+      // Fallback to empty data on error
+      setStats({
+        artists: 0,
+        galleries: 0,
+        kols: 0,
+        teams: 0,
+      });
+      setRecentActivities([]);
     } finally {
       setLoading(false);
     }

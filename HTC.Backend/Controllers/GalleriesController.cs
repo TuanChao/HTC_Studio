@@ -171,6 +171,48 @@ public class GalleriesController : ControllerBase
         return Ok(result);
     }
 
+    [HttpGet("{id}/images")]
+    public async Task<ActionResult> GetGalleryImages(string id)
+    {
+        var gallery = await _galleryRepository.GetByIdAsync(id);
+        if (gallery == null)
+        {
+            return NotFound(new { error = "Gallery not found" });
+        }
+
+        var artist = await _artistRepository.GetByIdAsync(gallery.ArtistId);
+        if (artist == null)
+        {
+            return NotFound(new { error = "Artist not found" });
+        }
+
+        // Get all galleries from the same artist
+        var (galleries, _) = await _galleryRepository.GetPagedAsync(
+            1, 
+            1000, // Large number to get all
+            filter: x => x.ArtistId == gallery.ArtistId
+        );
+
+        var pictures = galleries.Select(g => new 
+        {
+            id = g.Id,
+            picture = g.Picture,
+            alt = $"Gallery image {g.Id}",
+            artist_id = g.ArtistId,
+            created_at = g.CreatedAt.ToString("yyyy-MM-ddTHH:mm:ss.fffZ"),
+            show_on_top = g.ShowOnTop,
+            updated_at = g.UpdatedAt.ToString("yyyy-MM-ddTHH:mm:ss.fffZ")
+        }).ToList();
+
+        var artistDto = _mapper.Map<ArtistDto>(artist);
+
+        return Ok(new 
+        {
+            pictures = pictures,
+            artist = artistDto
+        });
+    }
+
     [HttpDelete("{id}")]
     public async Task<ActionResult> DeleteGallery(string id)
     {

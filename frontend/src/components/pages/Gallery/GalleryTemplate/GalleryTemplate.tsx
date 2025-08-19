@@ -8,13 +8,28 @@ import "./GalleryTemplate.css";
 
 const GalleryTemplate: React.FC = () => {
   const { modalPreview, selectedIndex, onCloseModal } = useContext(GalleryContext);
+  
+  console.log('GalleryTemplate render - modalPreview:', modalPreview);
+
+  const getImageUrl = (picture: string) => {
+    if (!picture) return '/placeholder-image.jpg';
+    if (picture.startsWith('http')) return picture;
+    return `http://localhost:5000${picture}`;
+  };
 
   const renderTitle = () => {
     const onClickArtist = () => window.open(modalPreview.detailArtist.linkX, "_blank", "noopener,noreferrer");
 
     return (
       <div className="artist-preview-container">
-        <img src={modalPreview.detailArtist.avatar} alt={modalPreview.detailArtist.name} />
+        <img 
+          src={getImageUrl(modalPreview.detailArtist.avatar)} 
+          alt={modalPreview.detailArtist.name}
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            target.src = '/placeholder-image.jpg';
+          }}
+        />
         <div className="artist-preview-name">{modalPreview.detailArtist.name}</div>
         <div className="artist-dot">·</div>
         <div className="artist-view-tweet" onClick={() => onClickArtist()}>

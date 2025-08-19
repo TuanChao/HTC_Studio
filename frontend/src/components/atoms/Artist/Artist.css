@@ -65,6 +65,23 @@
     opacity: .6;
 }
 
+.artist-link.clickable {
+    cursor: pointer;
+}
+
+.artist-link.clickable:hover {
+    opacity: .6;
+}
+
+.team-position {
+    color: #666;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.6rem;
+}
+
 .total-image-container {
     margin-bottom: 0.6rem;
     display: flex;

@@ -11,6 +11,7 @@ import AdminDashboard from "src/components/pages/Admin/AdminDashboard";
 import AdminArtists from "src/components/pages/Admin/AdminArtists";
 import AdminGalleries from "src/components/pages/Admin/AdminGalleries";
 import AdminKols from "src/components/pages/Admin/AdminKols";
+import AdminTeams from "src/components/pages/Admin/AdminTeams";
 import routesName from "./enum.routes";
 import { IRouterData } from "./type.routes";
 
@@ -83,11 +84,13 @@ export const routesData: IRouterData[] = [
       </ProtectedRoute>
     ),
   },
-  // {
-  //   path: routesName.ADMIN_TEAMS,
-  //   layout: AdminLayout,
-  //   component: () => <ProtectedRoute>
-  //     <AdminTeams />
-  //     </ProtectedRoute>,
-  // },
+  {
+    path: routesName.ADMIN_TEAMS,
+    layout: AdminLayout,
+    component: () => (
+      <ProtectedRoute>
+        <AdminTeams />
+      </ProtectedRoute>
+    ),
+  },
 ];

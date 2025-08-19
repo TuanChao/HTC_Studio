@@ -8,9 +8,9 @@ const ProductSection: React.FC = () => {
     <div className="product-section">
       <TitleSection />
       <div className="product-cards-container">
-        {ABOUT_CONTENT.map((product, index) => (
+        {ABOUT_CONTENT.map((product) => (
           <ProductCard
-            key={index}
+            key={product.title}
             imageSrc={product.imageSrc}
             title={product.title}
             description={product.description}

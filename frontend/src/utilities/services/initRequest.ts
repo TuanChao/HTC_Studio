@@ -54,7 +54,7 @@ export default function initRequest() {
           break;
         }
         case 404: {
-          window.location.href = "/404";
+          // window.location.href = "/404";
           break;
         }
         default:

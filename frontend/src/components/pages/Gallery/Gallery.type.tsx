@@ -1,10 +1,10 @@
 import { DetailArtist } from "src/components/atoms/Artist/Artist.type";
 
 export type ImageList = {
-  id: number;
+  id: number | string;
   picture: string;
   alt: string;
-  artist_id: number;
+  artist_id: number | string;
   created_at: string;
   show_on_top: boolean;
   updated_at: string;
