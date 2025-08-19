@@ -14,7 +14,7 @@ type IAxiosResponse = AxiosError<any> & {
   };
 };
 
-export const endpointApi = process.env.REACT_APP_API_URL || "http://localhost:5000";
+export const endpointApi = process.env.REACT_APP_API_URL || "http://localhost:5001";
 
 const requestConfig: IConfig = {
   baseURL: endpointApi,

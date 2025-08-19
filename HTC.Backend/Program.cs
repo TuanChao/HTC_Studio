@@ -24,6 +24,7 @@ builder.Services.AddSingleton<IMongoDbContext, MongoDbContext>();
 builder.Services.AddScoped<IArtistRepository, ArtistRepository>();
 builder.Services.AddScoped<IGalleryRepository, GalleryRepository>();
 builder.Services.AddScoped<IKolRepository, KolRepository>();
+builder.Services.AddScoped<IPetRepository, PetRepository>();
 builder.Services.AddScoped<ITeamRepository, TeamRepository>();
 
 // AutoMapper

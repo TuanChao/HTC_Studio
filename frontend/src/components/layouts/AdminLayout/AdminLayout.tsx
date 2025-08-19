@@ -6,6 +6,7 @@ import {
   PictureOutlined,
   TeamOutlined,
   StarOutlined,
+  HeartOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   LogoutOutlined,
@@ -47,6 +48,11 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
       key: routesName.ADMIN_KOLS,
       icon: <StarOutlined />,
       label: 'KOLs',
+    },
+    {
+      key: routesName.ADMIN_PETS,
+      icon: <HeartOutlined />,
+      label: 'Pets',
     },
     {
       key: routesName.ADMIN_TEAMS,

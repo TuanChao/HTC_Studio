@@ -11,6 +11,7 @@ import AdminDashboard from "src/components/pages/Admin/AdminDashboard";
 import AdminArtists from "src/components/pages/Admin/AdminArtists";
 import AdminGalleries from "src/components/pages/Admin/AdminGalleries";
 import AdminKols from "src/components/pages/Admin/AdminKols";
+import AdminPets from "src/components/pages/Admin/AdminPets";
 import AdminTeams from "src/components/pages/Admin/AdminTeams";
 import routesName from "./enum.routes";
 import { IRouterData } from "./type.routes";
@@ -81,6 +82,15 @@ export const routesData: IRouterData[] = [
     component: () => (
       <ProtectedRoute>
         <AdminKols />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: routesName.ADMIN_PETS,
+    layout: AdminLayout,
+    component: () => (
+      <ProtectedRoute>
+        <AdminPets />
       </ProtectedRoute>
     ),
   },

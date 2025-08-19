@@ -6,6 +6,7 @@ import HomeTeam from "../HomeOrganisms/HomeTeam";
 import { HomeContext } from "../context";
 import homeBanner from "src/assets/images/Banner_1.jpg";
 import HomeKOLs from "../HomeOrganisms/HomeKOLs";
+import HomePetCollection from "../HomeOrganisms/HomePetCollection/HomePetCollection";
 
 const HomeTemplate: React.FC = () => {
   const { scrollPosition } = useContext(HomeContext);
@@ -34,6 +35,8 @@ const HomeTemplate: React.FC = () => {
         <BackdropSection />
 
         <HomeTeam />
+
+        <HomePetCollection />
       </div>
     </>
   );

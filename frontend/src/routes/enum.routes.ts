@@ -11,6 +11,7 @@ const routesName = {
   ADMIN_ARTISTS: "/htcadmin/artists",
   ADMIN_GALLERIES: "/htcadmin/galleries",
   ADMIN_KOLS: "/htcadmin/kols",
+  ADMIN_PETS: "/htcadmin/pets",
   ADMIN_TEAMS: "/htcadmin/teams",
 };
 
