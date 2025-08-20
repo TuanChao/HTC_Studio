@@ -23,11 +23,10 @@ const HomePetCollection: React.FC = () => {
             pauseOnClick={false}
           >
             {row.map((item, index) => (
-              <div className="card-pet" key={index} onClick={() => window.open(item.link_x, "_blank")}>
+              <div className="card-pet" key={index}>
                 <div className="image-pet-wrapper">
                   <img src={item.avatar} alt={item.name} className="image-pet" />
                 </div>
-                <p className="pet-name">{item.name}</p>
               </div>
             ))}
           </Marquee>
