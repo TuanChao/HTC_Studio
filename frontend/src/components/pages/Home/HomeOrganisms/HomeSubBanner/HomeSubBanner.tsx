@@ -17,13 +17,10 @@ const HomeSubBanner: React.FC = () => {
 
   const textContent = (
     <>
-      HTC GROUP is a community for 100+ artists and art enthusiasts, where we create a space for artists and art lovers
-      to connect and learn from each other. Our goal is to strengthen the fan art community, as fan art plays an
-      important role in Web 3. We're here to clarify and emphasize its significance.
+      HTC GROUP is a community of over 100 artists and art enthusiasts, where we create a space for artists and art lovers to connect and learn from each other. Our goal is to strengthen the art community, as fan art plays an important role in Web3.
       <br />
       <br />
-      We create a common brand for the community and are committed to building a strong artist community Backer by HTC
-      Venture.
+       We are here as a bridge to help artists more easily access Web3 ecosystems available within HTC, so they can build NFT projects on the ecosystems that HTC provides.
     </>
   );
 

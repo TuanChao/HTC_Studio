@@ -13,6 +13,7 @@ const routesName = {
   ADMIN_KOLS: "/htcadmin/kols",
   ADMIN_PETS: "/htcadmin/pets",
   ADMIN_TEAMS: "/htcadmin/teams",
+  ADMIN_EARTH_MAP: "/htcadmin/earth-map",
 };
 
 export default routesName;

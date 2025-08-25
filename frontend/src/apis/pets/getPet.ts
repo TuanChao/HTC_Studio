@@ -75,7 +75,7 @@ export async function getAllPets(): Promise<HomePets[]> {
         id: parseInt(pet.id),
         name: pet.name,
         link_x: pet.linkX || '',
-        avatar: pet.avatar ? (pet.avatar.startsWith('http') ? pet.avatar : `http://localhost:5001${pet.avatar}`) : '/placeholder-avatar.jpg'
+        avatar: pet.avatar ? (pet.avatar.startsWith('http') ? pet.avatar : `http://localhost:5000${pet.avatar}`) : '/placeholder-avatar.jpg'
       }));
       
     console.log('Mapped Pets:', mappedPets);

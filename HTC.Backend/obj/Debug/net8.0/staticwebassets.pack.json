@@ -1,132 +1,292 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\02d05364-cc3e-4e57-a238-6023b5a68805.gif",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\02d05364-cc3e-4e57-a238-6023b5a68805.gif",
       "PackagePath": "staticwebassets\\uploads\\avatars\\02d05364-cc3e-4e57-a238-6023b5a68805.gif"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\28d18235-e1a6-43e3-8f60-23f0093e2cf4.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\2185eefa-01d8-4950-9a53-78c5dc45ccc4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\2185eefa-01d8-4950-9a53-78c5dc45ccc4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\281f96df-4f25-4d72-88bd-def7cac5825b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\281f96df-4f25-4d72-88bd-def7cac5825b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\28d18235-e1a6-43e3-8f60-23f0093e2cf4.jpg",
       "PackagePath": "staticwebassets\\uploads\\avatars\\28d18235-e1a6-43e3-8f60-23f0093e2cf4.jpg"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\2a647097-3118-4a6b-9452-7747e2e38b22.webp",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\2a647097-3118-4a6b-9452-7747e2e38b22.webp",
       "PackagePath": "staticwebassets\\uploads\\avatars\\2a647097-3118-4a6b-9452-7747e2e38b22.webp"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\2e168208-735b-4316-8579-d0dceebdda5c.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\2e168208-735b-4316-8579-d0dceebdda5c.jpg",
       "PackagePath": "staticwebassets\\uploads\\avatars\\2e168208-735b-4316-8579-d0dceebdda5c.jpg"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\52687cbc-f3d4-43a6-8169-544a50b53578.gif",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\52687cbc-f3d4-43a6-8169-544a50b53578.gif",
       "PackagePath": "staticwebassets\\uploads\\avatars\\52687cbc-f3d4-43a6-8169-544a50b53578.gif"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\55476f96-8e15-4ef6-85c4-4b2dcd6c9628.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\55476f96-8e15-4ef6-85c4-4b2dcd6c9628.jpg",
       "PackagePath": "staticwebassets\\uploads\\avatars\\55476f96-8e15-4ef6-85c4-4b2dcd6c9628.jpg"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\643ff371-2772-4d12-9ed6-9921c811757e.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\643ff371-2772-4d12-9ed6-9921c811757e.png",
       "PackagePath": "staticwebassets\\uploads\\avatars\\643ff371-2772-4d12-9ed6-9921c811757e.png"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\68fa91be-7156-425f-bbcc-5d785a26cfb6.gif",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\68fa91be-7156-425f-bbcc-5d785a26cfb6.gif",
       "PackagePath": "staticwebassets\\uploads\\avatars\\68fa91be-7156-425f-bbcc-5d785a26cfb6.gif"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\7a192fd7-6102-46b6-bb59-8c04e3823f44.gif",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\7a192fd7-6102-46b6-bb59-8c04e3823f44.gif",
       "PackagePath": "staticwebassets\\uploads\\avatars\\7a192fd7-6102-46b6-bb59-8c04e3823f44.gif"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\81b725a1-211e-44c4-b5d7-1414c4fd5718.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\8025a7b2-320d-4edb-9f50-5dc2d87508cb.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\8025a7b2-320d-4edb-9f50-5dc2d87508cb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\81b725a1-211e-44c4-b5d7-1414c4fd5718.jpg",
       "PackagePath": "staticwebassets\\uploads\\avatars\\81b725a1-211e-44c4-b5d7-1414c4fd5718.jpg"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\82e2e2cd-bc97-4727-9681-350bbc89aa86.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\82e2e2cd-bc97-4727-9681-350bbc89aa86.jpg",
       "PackagePath": "staticwebassets\\uploads\\avatars\\82e2e2cd-bc97-4727-9681-350bbc89aa86.jpg"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\8fec9718-c90f-4a5f-b6c2-f9960c83b195.gif",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\8fec9718-c90f-4a5f-b6c2-f9960c83b195.gif",
       "PackagePath": "staticwebassets\\uploads\\avatars\\8fec9718-c90f-4a5f-b6c2-f9960c83b195.gif"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\9b1b4a18-0ea9-4d8f-ab4b-112e921a9b4a.gif",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\9b1b4a18-0ea9-4d8f-ab4b-112e921a9b4a.gif",
       "PackagePath": "staticwebassets\\uploads\\avatars\\9b1b4a18-0ea9-4d8f-ab4b-112e921a9b4a.gif"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\9f7da488-d358-4fd8-affc-0e5476d8d429.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\9f7da488-d358-4fd8-affc-0e5476d8d429.jpg",
       "PackagePath": "staticwebassets\\uploads\\avatars\\9f7da488-d358-4fd8-affc-0e5476d8d429.jpg"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\af1e0049-86ac-493b-a36a-312aea141dec.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\a1636a82-cf14-4590-85f6-5538458230f8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\a1636a82-cf14-4590-85f6-5538458230f8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\af1e0049-86ac-493b-a36a-312aea141dec.jpg",
       "PackagePath": "staticwebassets\\uploads\\avatars\\af1e0049-86ac-493b-a36a-312aea141dec.jpg"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\b647f35a-1391-4efc-a1ae-3424cb4cb020.gif",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\b647f35a-1391-4efc-a1ae-3424cb4cb020.gif",
       "PackagePath": "staticwebassets\\uploads\\avatars\\b647f35a-1391-4efc-a1ae-3424cb4cb020.gif"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\ce0226c9-e8ce-426a-a00c-acea348ca83a.gif",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\be828024-07e3-471f-a293-5b8307b720f4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\be828024-07e3-471f-a293-5b8307b720f4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\ce0226c9-e8ce-426a-a00c-acea348ca83a.gif",
       "PackagePath": "staticwebassets\\uploads\\avatars\\ce0226c9-e8ce-426a-a00c-acea348ca83a.gif"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\d3a2617f-f83c-43db-9b7c-554bdc6a852d.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\d3a2617f-f83c-43db-9b7c-554bdc6a852d.jpg",
       "PackagePath": "staticwebassets\\uploads\\avatars\\d3a2617f-f83c-43db-9b7c-554bdc6a852d.jpg"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\avatars\\fd4eecbf-f701-43ec-9a5f-620c2cd594d7.gif",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\e5533d17-8579-4fc1-84f2-df80b0910fbe.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avatars\\e5533d17-8579-4fc1-84f2-df80b0910fbe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\avatars\\fd4eecbf-f701-43ec-9a5f-620c2cd594d7.gif",
       "PackagePath": "staticwebassets\\uploads\\avatars\\fd4eecbf-f701-43ec-9a5f-620c2cd594d7.gif"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\05eea885-b5d3-45a7-9dea-b866d01b1315.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\galleries\\05eea885-b5d3-45a7-9dea-b866d01b1315.jpg",
       "PackagePath": "staticwebassets\\uploads\\galleries\\05eea885-b5d3-45a7-9dea-b866d01b1315.jpg"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\206c2bcf-fce2-441b-ac9d-439e1b115aec.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\galleries\\206c2bcf-fce2-441b-ac9d-439e1b115aec.jpg",
       "PackagePath": "staticwebassets\\uploads\\galleries\\206c2bcf-fce2-441b-ac9d-439e1b115aec.jpg"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\2c81c9da-8d32-41cb-bfec-c6f431a00ddf.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\galleries\\2c81c9da-8d32-41cb-bfec-c6f431a00ddf.jpg",
       "PackagePath": "staticwebassets\\uploads\\galleries\\2c81c9da-8d32-41cb-bfec-c6f431a00ddf.jpg"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\309f632f-2701-4b99-b25d-7d04a68889c0.gif",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\galleries\\309f632f-2701-4b99-b25d-7d04a68889c0.gif",
       "PackagePath": "staticwebassets\\uploads\\galleries\\309f632f-2701-4b99-b25d-7d04a68889c0.gif"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\3130e51e-137e-4c28-9cd6-91c85c6355ea.gif",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\galleries\\3130e51e-137e-4c28-9cd6-91c85c6355ea.gif",
       "PackagePath": "staticwebassets\\uploads\\galleries\\3130e51e-137e-4c28-9cd6-91c85c6355ea.gif"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\49a5e626-4069-4506-84e8-25b52d721844.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\galleries\\49a5e626-4069-4506-84e8-25b52d721844.jpg",
       "PackagePath": "staticwebassets\\uploads\\galleries\\49a5e626-4069-4506-84e8-25b52d721844.jpg"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\6b7a1cb3-c7d7-447f-b6b1-11cc2ab00a1f.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\galleries\\5d98b1f2-f77b-4e1f-b25b-b92da6b93409.webp",
+      "PackagePath": "staticwebassets\\uploads\\galleries\\5d98b1f2-f77b-4e1f-b25b-b92da6b93409.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\galleries\\6b7a1cb3-c7d7-447f-b6b1-11cc2ab00a1f.jpg",
       "PackagePath": "staticwebassets\\uploads\\galleries\\6b7a1cb3-c7d7-447f-b6b1-11cc2ab00a1f.jpg"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\c569cead-89cd-47b2-ada7-89ddd1052446.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\galleries\\a564963a-4fca-4a10-9b05-d26e0bebbe98.webp",
+      "PackagePath": "staticwebassets\\uploads\\galleries\\a564963a-4fca-4a10-9b05-d26e0bebbe98.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\galleries\\c569cead-89cd-47b2-ada7-89ddd1052446.jpg",
       "PackagePath": "staticwebassets\\uploads\\galleries\\c569cead-89cd-47b2-ada7-89ddd1052446.jpg"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\e50959f0-9782-4267-9109-d2487903eba7.gif",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\galleries\\e50959f0-9782-4267-9109-d2487903eba7.gif",
       "PackagePath": "staticwebassets\\uploads\\galleries\\e50959f0-9782-4267-9109-d2487903eba7.gif"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\ea2dbd8d-fa41-426a-86e9-d11cde8e12c0.jpg",
-      "PackagePath": "staticwebassets\\uploads\\galleries\\ea2dbd8d-fa41-426a-86e9-d11cde8e12c0.jpg"
-    },
-    {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\ee0b4234-60b8-45b4-8011-6fa364711686.gif",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\galleries\\ee0b4234-60b8-45b4-8011-6fa364711686.gif",
       "PackagePath": "staticwebassets\\uploads\\galleries\\ee0b4234-60b8-45b4-8011-6fa364711686.gif"
     },
     {
-      "Id": "C:\\Users\\1\\Desktop\\haizz\\flask_api-master\\flask_api-master\\HTC.Backend\\wwwroot\\uploads\\galleries\\f14a6c8c-0156-4754-9eb9-3d1667c01091.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\galleries\\f14a6c8c-0156-4754-9eb9-3d1667c01091.jpg",
       "PackagePath": "staticwebassets\\uploads\\galleries\\f14a6c8c-0156-4754-9eb9-3d1667c01091.jpg"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HTC.Backend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\05f6a926-99a2-4d10-8e49-a22854ea9aec.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\05f6a926-99a2-4d10-8e49-a22854ea9aec.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\0baffba3-8189-424f-b264-935098eee219.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\0baffba3-8189-424f-b264-935098eee219.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\0bb4339d-c83d-46aa-baa7-230ad8ff8647.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\0bb4339d-c83d-46aa-baa7-230ad8ff8647.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\122d584b-a62c-482b-9776-5f811eeb1a53.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\122d584b-a62c-482b-9776-5f811eeb1a53.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\1e77f605-659a-4756-b71b-8c6a5610512a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\1e77f605-659a-4756-b71b-8c6a5610512a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\20e5015d-511d-43f2-8180-953fcd253567.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\20e5015d-511d-43f2-8180-953fcd253567.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\21dc3156-0216-4466-8c1e-60d4132b57ed.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\21dc3156-0216-4466-8c1e-60d4132b57ed.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\25545dae-a595-4fd7-bff3-ff2f9f8ec211.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\25545dae-a595-4fd7-bff3-ff2f9f8ec211.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\33ec43b0-9571-40c3-922b-e210b3080706.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\33ec43b0-9571-40c3-922b-e210b3080706.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\361627d8-0187-48e4-95c4-1922bbe190bf.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\361627d8-0187-48e4-95c4-1922bbe190bf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\3862ffa4-1f44-465a-af5c-b0672b3cbee8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\3862ffa4-1f44-465a-af5c-b0672b3cbee8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\3a66b840-3546-4e82-bfeb-4130fe8fa768.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\3a66b840-3546-4e82-bfeb-4130fe8fa768.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\3d03bdb0-4e57-4b15-b8a8-339c4cd42b7a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\3d03bdb0-4e57-4b15-b8a8-339c4cd42b7a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\3db8a9b1-9f13-441b-af04-07a40ec423a6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\3db8a9b1-9f13-441b-af04-07a40ec423a6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\476dfd4f-8a6f-4140-b81e-f0e2a91dea67.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\476dfd4f-8a6f-4140-b81e-f0e2a91dea67.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\4d3fd3f1-2fc4-4790-87b2-11a9e95a712d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\4d3fd3f1-2fc4-4790-87b2-11a9e95a712d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\54d96fb9-32ae-4806-9d0e-70dadcfad0da.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\54d96fb9-32ae-4806-9d0e-70dadcfad0da.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\5f905c24-1dff-45ff-9371-31dfa360a847.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\5f905c24-1dff-45ff-9371-31dfa360a847.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\72cf3454-39c8-44ac-a56f-10666f8ad9b6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\72cf3454-39c8-44ac-a56f-10666f8ad9b6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\8b671590-134f-4ac6-b26a-82a46962ab8d.webp",
+      "PackagePath": "staticwebassets\\uploads\\logos\\8b671590-134f-4ac6-b26a-82a46962ab8d.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\9d1b9026-5938-4dfc-be6c-b2ad6208c6fd.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\9d1b9026-5938-4dfc-be6c-b2ad6208c6fd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\b54765e2-b273-4548-a8ef-343e87787cac.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\b54765e2-b273-4548-a8ef-343e87787cac.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\ba04e2ce-b22e-414c-9d1c-9fe43165614e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\ba04e2ce-b22e-414c-9d1c-9fe43165614e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\bb9c7469-6332-47f6-9c23-6a7fc005529f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\bb9c7469-6332-47f6-9c23-6a7fc005529f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\bd4dd793-8492-493c-9a6f-68b7f4e331a7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\bd4dd793-8492-493c-9a6f-68b7f4e331a7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\cc4b2a89-b4e9-433c-8b81-b9f47ada3e45.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\cc4b2a89-b4e9-433c-8b81-b9f47ada3e45.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\cf522906-2be2-4a14-85c8-d0a8adeafac9.png",
+      "PackagePath": "staticwebassets\\uploads\\logos\\cf522906-2be2-4a14-85c8-d0a8adeafac9.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\cf916693-ca68-4c52-b658-0fd6b0fe12b2.png",
+      "PackagePath": "staticwebassets\\uploads\\logos\\cf916693-ca68-4c52-b658-0fd6b0fe12b2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\d03e2e80-041f-4d7c-a341-0590f0370ea5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\d03e2e80-041f-4d7c-a341-0590f0370ea5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\df41d8c7-d19e-4b0d-84f7-708b46c6d0a0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\df41d8c7-d19e-4b0d-84f7-708b46c6d0a0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\e3cad545-a790-4ef3-a072-f06a66144674.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\e3cad545-a790-4ef3-a072-f06a66144674.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\e6789f59-726a-4b0a-9701-a1d516631026.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\e6789f59-726a-4b0a-9701-a1d516631026.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\f6ddb09b-95dc-471f-b1a9-2375945daffc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\f6ddb09b-95dc-471f-b1a9-2375945daffc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HTC_Studio\\HTC.Backend\\wwwroot\\uploads\\logos\\fd26cea5-eeff-4b1e-a776-bb29074c594c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\fd26cea5-eeff-4b1e-a776-bb29074c594c.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HTC.Backend.Microsoft.AspNetCore.StaticWebAssets.props",

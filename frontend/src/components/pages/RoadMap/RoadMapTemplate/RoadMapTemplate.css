@@ -1,0 +1,20 @@
+.logo-under-ground,
+.logo-under-ground1 {
+    background-image: url(/src/assets/images/HTC_logo_Black_1.png);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    z-index: 0;
+    transform: rotate(-8.3deg);
+    position: absolute;
+    width: 200%;
+    top: 0;
+    left: 0;
+    height: 500px;
+    opacity: .2;
+    filter: blur(4px);
+}
+
+.logo-under-ground1 {
+    top: 650px !important;
+}

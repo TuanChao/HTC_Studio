@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Scroll wrapper - tạo scroll space */
+.roadmap-scroll-wrapper {
+  height: 500vh; /* 5x viewport height cho ScrollTrigger */
+}
+
+/* Container - 1 màn hình */
+.roadmap-container {
+  height: 100vh;
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Header - Fixed position */
+.roadmap-header {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 100;
+}
+
+.roadmap-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0 0 16px 0;
+  background: linear-gradient(45deg, #ffffff, #f0f0f0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.roadmap-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Phases List - Horizontal scroll container */
+.phases-list {
+  display: flex;
+  width: 500%; /* 5 thẻ x 100% */
+  height: 100vh;
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Phase Card - Mỗi thẻ chiếm 20% container (= 100% viewport) */
+.phase-card {
+  width: 20%; /* 100% / 5 = 20% */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  position: relative;
+  opacity: 0.3;
+  transform: scale(0.9);
+  transition: all 0.8s ease;
+}
+
+/* Active phase */
+.phase-card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Transparent background for all phases */
+.phase-card {
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.phase-card .logo-under-ground {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: url('../../../../assets/images/HTC_logo_White_1.png') center center no-repeat;
+  background-size: contain;
+  opacity: 0.08;
+  top: 10%;
+  left: 5%;
+  animation: float1 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+.phase-card .logo-under-ground1 {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: url('../../../../assets/images/HTC_logo_White_1.png') center center no-repeat;
+  background-size: contain;
+  opacity: 0.06;
+  bottom: 10%;
+  right: 5%;
+  animation: float2 8s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(15px) rotate(-3deg); }
+}
+
+.phase-card .logo-under-ground2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: url('../../../../assets/images/HTC_logo_White_1.png') center center no-repeat;
+  background-size: contain;
+  opacity: 0.05;
+  top: 60%;
+  left: 70%;
+  animation: float3 10s ease-in-out infinite;
+  z-index: 0;
+}
+
+.phase-card .logo-under-ground3 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: url('../../../../assets/images/HTC_logo_White_1.png') center center no-repeat;
+  background-size: contain;
+  opacity: 0.04;
+  top: 30%;
+  right: 40%;
+  animation: float4 7s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-30px) rotate(-8deg); }
+}
+
+@keyframes float4 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(25px) rotate(10deg); }
+}
+
+/* Content layout - 60% + 40% */
+.phase-card-content {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Left side - 60% */
+.phase-left {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.phase-number {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffd700;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: inline-block;
+  backdrop-filter: blur(10px);
+  align-self: flex-start;
+}
+
+.phase-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  margin: 0;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.phase-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* Right side - 40% */
+.phase-right {
+  flex: 0 0 40%;
+  padding-left: 40px;
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Phase image styling */
+.phase-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phase-image img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Social icons styling */
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.roadmap-container .social-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.roadmap-container .social-icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.roadmap-container .social-icon svg {
+  color: #ffffff;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/* Phase gallery styling */
+.phase-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.gallery-img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Phase 5 special styling */
+.phase-card:nth-child(5) .phase-card-content {
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+}
+
+.phase-content-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.phase-card:nth-child(5) .phase-left {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.phase-card:nth-child(5) .phase-right {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whitepaper-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whitepaper-btn {
+  background: linear-gradient(45deg, #ffd700, #ffed4e);
+  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  padding: 15px 35px;
+  border-radius: 25px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.whitepaper-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+.phase-gif {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phase-gif img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.phase-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.5s ease;
+}
+
+.phase-card.active .detail-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.phase-card.active .detail-item:nth-child(1) { transition-delay: 0.1s; }
+.phase-card.active .detail-item:nth-child(2) { transition-delay: 0.2s; }
+.phase-card.active .detail-item:nth-child(3) { transition-delay: 0.3s; }
+
+.detail-bullet {
+  width: 8px;
+  height: 8px;
+  background: #ffd700;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Navigation dots */
+.nav-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  z-index: 100;
+}
+
+/* Progress line connecting dots */
+.nav-dots::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  z-index: -1;
+}
+
+.nav-dots::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  border-radius: 2px;
+  z-index: -1;
+  transition: width 0.8s ease;
+  width: calc(var(--progress) * 25%);
+}
+
+.nav-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Completed dots */
+.nav-dot.completed {
+  background: rgba(255, 215, 0, 0.2);
+  border-color: #ffd700;
+  color: #ffd700;
+}
+
+/* Active dot */
+.nav-dot.active {
+  background: linear-gradient(45deg, #ffd700, #ffed4e);
+  transform: scale(1.2);
+  border-color: #ffd700;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Hover effect */
+.nav-dot:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-dot.active:hover {
+  transform: scale(1.2);
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  }
+  50% { 
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .roadmap-title {
+    font-size: 32px;
+  }
+  
+  .roadmap-subtitle {
+    font-size: 16px;
+  }
+  
+  .phase-card {
+    flex-direction: column;
+    padding: 100px 30px 80px;
+    text-align: center;
+  }
+  
+  .phase-card-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .phase-left {
+    flex: none;
+  }
+  
+  .phase-right {
+    flex: none;
+    padding-left: 0;
+    border-left: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    padding-top: 30px;
+  }
+  
+  .phase-title {
+    font-size: 32px;
+  }
+  
+  .phase-description {
+    font-size: 16px;
+  }
+}

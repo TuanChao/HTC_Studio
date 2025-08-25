@@ -14,7 +14,7 @@ type IAxiosResponse = AxiosError<any> & {
   };
 };
 
-export const endpointApi = process.env.REACT_APP_API_URL || "http://localhost:5001";
+export const endpointApi = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
 const requestConfig: IConfig = {
   baseURL: endpointApi,
@@ -36,10 +36,8 @@ export default function initRequest() {
   );
 
   axiosInstance.interceptors.response.use(
-    (response: AxiosResponse): Promise<any> => {
-      const { data } = response;
-
-      return data;
+    (response: AxiosResponse) => {
+      return response.data;
     },
     (error: IAxiosResponse) => {
       // handle errors

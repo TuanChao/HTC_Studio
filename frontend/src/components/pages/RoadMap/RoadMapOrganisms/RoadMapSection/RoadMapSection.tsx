@@ -3,8 +3,9 @@ import "./RoadMapSection.css";
 
 const RoadMapSection: React.FC = () => {
   return (
-    <div className="roadmap-section">
-      <h1 className="main-title">
+    <div className="container">
+      <div className="roadmap-section">
+        <h1 className="main-title">
         Road
         <br />
         Map
@@ -16,6 +17,8 @@ const RoadMapSection: React.FC = () => {
         <br />
         Committed to meeting deadlines and taking responsibility for the product you purchase
       </p>
+      </div>
+        
     </div>
   );
 };

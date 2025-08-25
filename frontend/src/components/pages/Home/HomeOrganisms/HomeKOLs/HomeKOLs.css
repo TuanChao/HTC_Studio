@@ -9,6 +9,10 @@
     overflow: hidden;
     position: relative;
     font-family: "Space Grotesk", serif !important;
+    padding: 50px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hall {
@@ -23,14 +27,14 @@
     text-align: center;
     cursor: pointer;
     flex-shrink: 0;
-    width: 190px;
+    width: 300px;
     padding: 30px 0;
     background-color: transparent;
 }
 
 .image-kol-wrapper {
-    width: 180px;
-    height: 200px;
+    width: 280px;
+    height: 350px;
     border-radius: 20px;
     overflow: hidden;
     margin: 0 auto;
@@ -46,7 +50,7 @@
 
 .kol-name {
     margin-top: 35px;
-    font-size: 18px;
+    font-size: 24px;
     color: var(--grey-color);
     transition: color 0.4s ease, text-shadow 0.4s ease;
     font-weight: bold;

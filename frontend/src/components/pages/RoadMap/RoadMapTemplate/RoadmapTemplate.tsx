@@ -3,6 +3,7 @@ import RoadMapSection from "../RoadMapOrganisms/RoadMapSection/RoadMapSection";
 import { RoadMapContext } from "src/components/pages/RoadMap/context";
 import homeBanner from "src/assets/images/Banner_1.jpg";
 import RoadMapBanner from "../RoadMapOrganisms/RoadMapBanner/RoadMapBanner";
+import RoadMapSlide from "../RoadMapSlide/RoadMapSlide";
 
 const RoadMapTemplate: React.FC = () => {
   const { scrollPosition } = useContext(RoadMapContext);
@@ -25,8 +26,9 @@ const RoadMapTemplate: React.FC = () => {
 
       <div className="RoadMap-content-container">
         <RoadMapSection />
+        <RoadMapSlide/>
       </div>
-
+     
     </>
   );
 };

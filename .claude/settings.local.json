@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:berserk-heart-of-darkness.vercel.app)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

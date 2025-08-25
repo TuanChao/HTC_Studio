@@ -27,6 +27,11 @@ public class GalleriesController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<GalleryDto>> CreateGallery([FromForm] CreateGalleryDto createDto, IFormFile? picture)
     {
+        Console.WriteLine($"CreateGallery called with ArtistId: {createDto.ArtistId}");
+        Console.WriteLine($"ShowOnTop: {createDto.ShowOnTop}");
+        Console.WriteLine($"Picture file received: {picture?.FileName ?? "null"}");
+        Console.WriteLine($"Picture file size: {picture?.Length ?? 0}");
+        
         if (string.IsNullOrEmpty(createDto.ArtistId))
         {
             return BadRequest(new { error = "Artist ID is required" });
@@ -42,12 +47,12 @@ public class GalleriesController : ControllerBase
 
         if (picture != null && picture.Length > 0)
         {
-            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif", ".webp" };
             var extension = Path.GetExtension(picture.FileName).ToLowerInvariant();
             
             if (!allowedExtensions.Contains(extension))
             {
-                return BadRequest(new { error = "Invalid file type. Only JPG, PNG, and GIF files are allowed." });
+                return BadRequest(new { error = "Invalid file type. Only JPG, PNG, GIF, and WEBP files are allowed." });
             }
 
             if (picture.Length > 5 * 1024 * 1024)
@@ -128,12 +133,12 @@ public class GalleriesController : ControllerBase
 
         if (picture != null && picture.Length > 0)
         {
-            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif", ".webp" };
             var extension = Path.GetExtension(picture.FileName).ToLowerInvariant();
             
             if (!allowedExtensions.Contains(extension))
             {
-                return BadRequest(new { error = "Invalid file type. Only JPG, PNG, and GIF files are allowed." });
+                return BadRequest(new { error = "Invalid file type. Only JPG, PNG, GIF, and WEBP files are allowed." });
             }
 
             if (picture.Length > 5 * 1024 * 1024)

@@ -96,3 +96,4 @@ C:\Users\1\Desktop\haizz\flask_api-master\flask_api-master\HTC.Backend\obj\Debug
 C:\Users\1\Desktop\haizz\flask_api-master\flask_api-master\HTC.Backend\obj\Debug\net8.0\HTC.Backend.genruntimeconfig.cache
 C:\Users\1\Desktop\haizz\flask_api-master\flask_api-master\HTC.Backend\obj\Debug\net8.0\ref\HTC.Backend.dll
 C:\Users\1\Desktop\haizz\flask_api-master\flask_api-master\HTC.Backend\bin\Debug\net8.0\HTC.Backend.staticwebassets.runtime.json
+C:\Users\Admin\Desktop\HTC_Studio\HTC.Backend\bin\Debug\net8.0\HTC.Backend.staticwebassets.runtime.json
